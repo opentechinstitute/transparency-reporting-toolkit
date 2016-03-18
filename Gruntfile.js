@@ -26,7 +26,6 @@ module.exports = function(grunt) {
 
   grunt.initConfig(config);
 
-  grunt.registerTask('default', ['watch']);
-  grunt.registerTask('localhost', ['connect']);
+  grunt.registerTask('default', ['connect', 'watch']);
 
 };

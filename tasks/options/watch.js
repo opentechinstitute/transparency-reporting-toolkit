@@ -2,7 +2,7 @@ module.exports = {
   watch: {
     // css: {
       files: '**/*.scss',
-      tasks: ['compass'],
+      tasks: ['sass'],
       options: {
         livereload: true
       }
