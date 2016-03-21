@@ -1,8 +1,6 @@
 module.exports = {
-    sass: {
-      // dist: {
-        files: {'dest/styles/main.css':'src/styles/main.scss'}
-      // }
-    }
-  // }
+  sass: {
+    files: {'dest/styles/main.css':'src/styles/main.scss'},
+    style: 'compressed'
+  }
 }
