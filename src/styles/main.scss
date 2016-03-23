@@ -1,7 +1,31 @@
+@import "nav";
+@import "home";
+@import "typography";
+
 body {
-  background-color:#000;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  margin:0;
+  // set to height of window
+  display:flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.container {
+  padding:1em;
+  max-width:960px;
+  margin:0 auto;
+  width:auto;
 }
 
-p {
-  color:#fff;
+// expand as needed to fill space
+.main-content {
+  flex:1;
+}
+
+.placeholder {
+  width:100%;
+  height:50vh;
+  background-color:lightgrey;
+  margin:1.5em auto;
+  display:block;
 }

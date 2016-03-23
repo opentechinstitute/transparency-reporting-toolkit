@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'u2400';
+  font-style: normal;
+  font-weight: normal;
+  src: url("http://unicode-table.com/fonts/u/u2400.eot?#iefix") format("embedded-opentype"),
+  url("http://unicode-table.com/fonts/u/u2400.woff") format("woff"),
+  url("http://unicode-table.com/fonts/u/u2400.ttf") format("truetype"),
+  url("http://unicode-table.com/fonts/u/u2400.svg#universaliaregular") format("svg");
+}
+
+.inline-list {
+  li {
+    display:inline;
+  }
+}
+
+ul {
+  padding:0;
+}
+
+.nav {
+  li:first-child {
+    font-weight: normal;
+    font-size:1.5em;
+    // &:before {
+    //   font-family:'u2400';
+    //   content: '\26BF';
+    //   font-size: 1.75em;
+    //   padding-right:0.25em;
+    // }
+  }
+  li:not(:first-child) {
+    float:right;
+    padding:0 10px;
+    font-weight: lighter;
+    line-height: 1.5em;
+  }
+}
+
+.grey-background {
+  background-color:grey;
+  color:white;
+}
+
+footer {
+  li {
+    padding: 0 5vw;
+    font-weight: lighter;
+  }
+}
