@@ -1,18 +1,13 @@
-<div class="types-usa">
+<div class="outcomes autocalculate">
 <table>
   <thead>
     <tr>
       <th rowspan="2"></th>
-      <th rowspan="2">Search warrants</th>
-      <th rowspan="2">Wiretap orders</th>
-      <th rowspan="2">Pen register orders</th>
-      <th colspan="2">Subpoenas</th>
-      <th rowspan="2">Emergency Requests</th>
+      <th rowspan="2">Rejected</th>
+      <th rowspan="2">No data</th>
+      <th rowspan="2">Content disclosed</th>
+      <th rowspan="2">Non-content disclosed</th>
       <th rowspan="2">Total</th>
-    </tr>
-    <tr>
-      <th>Criminal</th>
-      <th>Civil</th>
     </tr>
   </thead>
   <tbody>
@@ -21,46 +16,42 @@
         # Received
       </td>
       <td>
-        <input type="text" name="search-warrants"></input>
+        <input type="text" name="{{prefix}}-rejected"></input>
       </td>
       <td>
-        <input type="text" name="wiretap-orders"></input>
+        <input type="text" name="{{prefix}}-no-data"></input>
       </td>
       <td>
-        <input type="text" name="pen-register-orders"></input>
+        <input type="text" name="{{prefix}}-content-disclosed"></input>
       </td>
       <td>
-        <input type="text" name="criminal-subpoenas"></input>
+        <input type="text" name="{{prefix}}-non-content-disclosed"></input>
       </td>
       <td>
-        <input type="text" name="civil-subpoenas"></input>
-      </td>
-      <td>
-        <input type="text" name="emergency-requests"></input>
-      </td>
-      <td>
-        <input type="text" name="total" disabled="true" value=0></input>
+        <input type="text" name="{{prefix}}-total" disabled="true" value=0></input>
       </td>
     </tr>
-  </tbody>
-</table>
+    <tr>
+      <td>
+        % of total
+      </td>
+      <td>
+        <input type="text" disabled="true" name="{{prefix}}-pc-rejected"></input>
+      </td>
+      <td>
+        <input type="text" disabled="true" name="{{prefix}}-pc-no-data"></input>
+      </td>
+      <td>
+        <input type="text" disabled="true" name="{{prefix}}-pc-content-disclosed"></input>
+      </td>
+      <td>
+        <input type="text" disabled="true" name="{{prefix}}-pc-non-content-disclosed"></input>
+      </td>
+      <td>
+        <input type="text" name="{{prefix}}-pc-total" disabled="true" value=100%></input>
+      </td>
+    </tr>
 
-<div class="double-table">
-<table>
-  <tbody>
-    <td>Total # of selectors specified by all of the above requests</td>
-    <td>
-      <input type="text" name="total-selectors-specified"></input>
-    </td>
   </tbody>
 </table>
-<table>
-  <tbody>
-    <td>Total # of accounts responsive to all of the above requests</td>
-    <td>
-      <input type="text" name="total-selectors-specified"></input>
-    </td>
-  </tbody>
-</table>
-</div>
 </div>

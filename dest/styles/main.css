@@ -167,7 +167,10 @@ a {
 table {
   border-collapse: collapse;
   width: 100%;
+  table-layout: fixed;
   margin: 1.5em 0; }
+  table span {
+    text-decoration: underline; }
   table tr:first-child th:first-child {
     border: 0;
     background-color: transparent; }
@@ -185,6 +188,10 @@ table {
     background-color: transparent; }
     table input:focus {
       outline: thin solid lightgrey; }
+
+.autocalculate tbody tr:last-child {
+  background-color: lightgrey;
+  opacity: 0.5; }
 
 .double-table {
   margin: 1.5em 0;
