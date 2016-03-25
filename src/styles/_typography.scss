@@ -19,12 +19,14 @@ a {
   &:visited {
     color:#fff;
   }
-  &:hover {
-    @include low-contrast;
-  }
-  &.disabled {
-    pointer-events: none;
-    cursor: default;
-    opacity:0.25;
-  }
+}
+
+.progression:hover {
+  @include low-contrast;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity:0.25;
 }

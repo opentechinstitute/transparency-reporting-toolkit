@@ -120,13 +120,15 @@ a {
   text-decoration: none; }
   a:visited {
     color: #fff; }
-  a:hover {
-    background-color: lightgrey;
-    color: #fff; }
-  a.disabled {
-    pointer-events: none;
-    cursor: default;
-    opacity: 0.25; }
+
+.progression:hover {
+  background-color: lightgrey;
+  color: #fff; }
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.25; }
 
 .overlay-background {
   position: absolute;
@@ -179,7 +181,8 @@ table {
     padding: 0.25em; }
   table input {
     border: 0;
-    width: 100%; }
+    width: 100%;
+    background-color: transparent; }
     table input:focus {
       outline: thin solid lightgrey; }
 

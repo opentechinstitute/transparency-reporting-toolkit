@@ -38,6 +38,7 @@ table {
   input {
     border:0;
     width:100%;
+    background-color: transparent;
     &:focus {
       outline:thin solid $secondary;
     }

@@ -8,6 +8,25 @@ explore-p: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
 submit-p: "Go audemo C. Epotem untrum horei fac octus adhuctampl. Nihil vius auderis sinculicia audenis, porio etius es vatiam ium firmis."
 overlay-p: "Expedita sunt illum rem. Quas eveniet eum molestiae. Voluptatum quam fugiat eligendi voluptas delectus iste quibusdam. Maxime tempore asperiores ducimus ex. Voluptate aut sint rerum."
 ---
-{{>intro}}
-{{>cta}}
-{{>overlay}}
+<div class="intro-area">
+  <img src="#" class="placeholder" />
+  <p>{{this.intro-text}}</p>
+</div>
+<div class="intro-cta">
+  <input type="text" name="company" placeholder="Company name">
+  </input>
+  <p class="small">{{small-link}}</p>
+  <div class="split-box-2">
+    <a id="explore" href="explore-reports.html">{{explore-link}}</a>
+    <p>{{explore-p}}</p>
+  </div>
+  <div class="split-box-2">
+    <a id="submit-report" href="submit-report-0.html">{{submit-link}}</a>
+    <p>{{submit-p}}</p>
+  </div>
+</div>
+<div class="overlay-background">
+  <div class="overlay">
+    <p>{{overlay-p}}</p>
+  </div>
+</div>

@@ -6,7 +6,78 @@ title: "Types of legal processes received"
 isUSA: true
 ---
 <h1>Submit <span class="company-name"><span> transparency report</h1>
-{{>time-selection}}
+  <div class="time-selection">
+    <p>Select time period:</p>
+    <div class="time-options small">
+      <p>Jan-June</p><p>July-Dec</p>
+      <p>2016</p><p>2015</p><p>2014</p><p>2013</p><p>Other (click to edit)</p>
+    </div>
+  </div>
 {{>submit-intro}}
-{{>types-table-usa}}
+<div class="types-usa">
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2"></th>
+        <th rowspan="2">Search warrants</th>
+        <th rowspan="2">Wiretap orders</th>
+        <th rowspan="2">Pen register orders</th>
+        <th colspan="2">Subpoenas</th>
+        <th rowspan="2">Emergency Requests</th>
+        <th rowspan="2">Total</th>
+      </tr>
+      <tr>
+        <th>Criminal</th>
+        <th>Civil</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          # Received
+        </td>
+        <td>
+          <input type="text" name="search-warrants"></input>
+        </td>
+        <td>
+          <input type="text" name="wiretap-orders"></input>
+        </td>
+        <td>
+          <input type="text" name="pen-register-orders"></input>
+        </td>
+        <td>
+          <input type="text" name="criminal-subpoenas"></input>
+        </td>
+        <td>
+          <input type="text" name="civil-subpoenas"></input>
+        </td>
+        <td>
+          <input type="text" name="emergency-requests"></input>
+        </td>
+        <td>
+          <input type="text" name="total" disabled="true" value=0></input>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="double-table">
+    <table>
+      <tbody>
+        <td>Total # of selectors specified by all of the above requests</td>
+        <td>
+          <input type="text" name="total-selectors-specified"></input>
+        </td>
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <td>Total # of accounts responsive to all of the above requests</td>
+        <td>
+          <input type="text" name="total-selectors-specified"></input>
+        </td>
+      </tbody>
+    </table>
+  </div>
+</div>
 {{>progress-buttons}}
