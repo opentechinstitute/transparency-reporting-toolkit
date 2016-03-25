@@ -49,13 +49,6 @@ table {
   }
 }
 
-.autocalculate {
-  tbody tr:last-child {
-    background-color:$secondary;
-    opacity:0.5;
-  }
-}
-
 .double-table {
   @include section-margins;
   overflow:auto;

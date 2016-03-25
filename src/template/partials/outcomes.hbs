@@ -11,27 +11,27 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr {{#if review}}class="disabled"{{/if}}>
       <td>
         # Received
       </td>
       <td>
-        <input type="text" name="{{prefix}}-rejected"></input>
+        <input type="text" name="{{prefix}}-rejected" {{#if review}}disabled="true"{{/if}}></input>
       </td>
       <td>
-        <input type="text" name="{{prefix}}-no-data"></input>
+        <input type="text" name="{{prefix}}-no-data" {{#if review}}disabled="true"{{/if}}></input>
       </td>
       <td>
-        <input type="text" name="{{prefix}}-content-disclosed"></input>
+        <input type="text" name="{{prefix}}-content-disclosed" {{#if review}}disabled="true"{{/if}}></input>
       </td>
       <td>
-        <input type="text" name="{{prefix}}-non-content-disclosed"></input>
+        <input type="text" name="{{prefix}}-non-content-disclosed" {{#if review}}disabled="true"{{/if}}></input>
       </td>
       <td>
         <input type="text" name="{{prefix}}-total" disabled="true" value=0></input>
       </td>
     </tr>
-    <tr>
+    <tr class="disabled">
       <td>
         % of total
       </td>
