@@ -19,6 +19,12 @@
   .small {
     text-align: center;
   }
+  a {
+    @include button;
+    display:block;
+    margin:0 auto;
+    font-size: 1em;
+  }
 }
 
 input[name="company"] {
@@ -31,6 +37,3 @@ input[name="company"] {
   display:block;
 }
 
-button {
-  font-size: 1em;
-}

@@ -1,0 +1,12 @@
+.time-selection {
+  p {
+    display:inline;
+  }
+}
+.time-options {
+  display:inline;
+  p {
+    @include button;
+    margin:0 5px;
+  }
+}
