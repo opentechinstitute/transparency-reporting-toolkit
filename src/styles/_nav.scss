@@ -38,8 +38,7 @@ ul {
 }
 
 .nav-background {
-  background-color:$primary;
-  color:white;
+  @include high-contrast;
 }
 
 footer {

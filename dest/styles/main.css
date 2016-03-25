@@ -20,7 +20,7 @@ ul {
 
 .nav-background {
   background-color: grey;
-  color: white; }
+  color: #fff; }
 
 footer li {
   padding: 0 5vw;
@@ -41,7 +41,7 @@ footer li {
   text-decoration: none;
   max-width: 120px;
   text-align: center;
-  background-color: lightgrey;
+  background-color: grey;
   color: #fff;
   display: inline-block; }
 
@@ -69,7 +69,7 @@ footer li {
     text-decoration: none;
     max-width: 120px;
     text-align: center;
-    background-color: lightgrey;
+    background-color: grey;
     color: #fff;
     display: block;
     margin: 0 auto;
@@ -89,6 +89,14 @@ input[name="company"] {
 
 h1 {
   font-size: 1em; }
+
+.label {
+  font-size: 0.5em;
+  padding: 0.25em;
+  margin-left: 0.5em;
+  vertical-align: middle;
+  background-color: grey;
+  color: #fff; }
 
 .overlay-background {
   position: absolute;
@@ -114,7 +122,7 @@ h1 {
     text-decoration: none;
     max-width: 120px;
     text-align: center;
-    background-color: lightgrey;
+    background-color: grey;
     color: #fff;
     margin: 0 5px; }
 
@@ -126,7 +134,6 @@ table {
     background-color: transparent; }
   table th {
     border: thin solid lightgrey;
-    margin: 0;
     background-color: lightgrey;
     font-weight: normal; }
   table td {

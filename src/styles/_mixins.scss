@@ -1,5 +1,15 @@
 $primary: grey;
 $secondary: lightgrey;
+$light-text: #fff;
+
+@mixin low-contrast {
+  background-color: $secondary;
+  color: $light-text;
+}
+@mixin high-contrast {
+  background-color: $primary;
+  color: $light-text;
+}
 
 @mixin button {
   border:solid thin $secondary;
@@ -8,6 +18,5 @@ $secondary: lightgrey;
   text-decoration: none;
   max-width: 120px;
   text-align: center;
-  background-color:$secondary;
-  color:#fff;
+  @include high-contrast;
 }
