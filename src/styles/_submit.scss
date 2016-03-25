@@ -1,4 +1,5 @@
 .time-selection {
+  @include section-margins;
   p {
     display:inline;
   }
@@ -8,12 +9,18 @@
   p {
     @include button;
     margin:0 5px;
+    display:inline-block;
   }
+}
+
+.section-title {
+  @include section-margins;
 }
 
 table {
   border-collapse:collapse;
   width:100%;
+  @include section-margins;
   tr:first-child th:first-child{
     border:0;
     background-color:transparent;
@@ -38,7 +45,7 @@ table {
 }
 
 .double-table {
-  margin-top:1em;
+  @include section-margins;
   overflow:auto;
   table {
     width:49%;

@@ -20,3 +20,7 @@ $light-text: #fff;
   text-align: center;
   @include high-contrast;
 }
+
+@mixin section-margins {
+  margin: 1.5em 0;
+}

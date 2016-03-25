@@ -13,3 +13,18 @@ h1 {
   vertical-align:middle;
   @include high-contrast;
 }
+
+a {
+  text-decoration: none;
+  &:visited {
+    color:#fff;
+  }
+  &:hover {
+    @include low-contrast;
+  }
+  &.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity:0.25;
+  }
+}
