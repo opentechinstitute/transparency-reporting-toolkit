@@ -18,13 +18,32 @@ ul {
   font-weight: lighter;
   line-height: 1.5em; }
 
-.grey-background {
+.nav-background {
   background-color: grey;
   color: white; }
 
 footer li {
   padding: 0 5vw;
   font-weight: lighter; }
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.5; }
+
+.progress-buttons {
+  margin: 1em 0; }
+
+.progression {
+  border: solid thin lightgrey;
+  border-radius: 15px;
+  padding: 10px;
+  text-decoration: none;
+  max-width: 120px;
+  text-align: center;
+  background-color: lightgrey;
+  color: #fff;
+  display: inline-block; }
 
 .intro-area {
   font-size: 1.5em;
@@ -101,7 +120,6 @@ h1 {
 
 table {
   border-collapse: collapse;
-  white-space: normal;
   width: 100%; }
   table tr:first-child th:first-child {
     border: 0;
@@ -110,16 +128,16 @@ table {
     border: thin solid lightgrey;
     margin: 0;
     background-color: lightgrey;
-    font-weight: normal;
-    padding: 0.1em 1em; }
+    font-weight: normal; }
   table td {
     border: thin solid lightgrey;
-    max-width: 100px;
-    padding: 0 0.5em; }
+    width: 10vw;
+    padding: 0.25em; }
   table input {
     border: 0;
-    width: 100%;
-    padding: 1em; }
+    width: 100%; }
+    table input:focus {
+      outline: thin solid lightgrey; }
 
 .double-table {
   margin-top: 1em;
@@ -127,11 +145,13 @@ table {
   .double-table table {
     width: 49%;
     float: left; }
+    .double-table table input {
+      width: 100%; }
     .double-table table:last-child {
       float: right; }
     .double-table table td:first-child {
       background-color: lightgrey;
-      width: 60%; }
+      width: 70%; }
 
 body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;

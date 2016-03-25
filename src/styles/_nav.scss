@@ -37,8 +37,8 @@ ul {
   }
 }
 
-.grey-background {
-  background-color:grey;
+.nav-background {
+  background-color:$primary;
   color:white;
 }
 
@@ -47,4 +47,18 @@ footer {
     padding: 0 5vw;
     font-weight: lighter;
   }
+}
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity:0.5;
+}
+
+.progress-buttons {
+  margin:1em 0;
+}
+
+.progression {
+  @include button;
+  display:inline-block;
 }

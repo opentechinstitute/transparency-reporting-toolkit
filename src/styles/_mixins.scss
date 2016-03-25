@@ -1,10 +1,13 @@
+$primary: grey;
+$secondary: lightgrey;
+
 @mixin button {
-  border:solid thin lightgrey;
+  border:solid thin $secondary;
   border-radius: 15px;
   padding:10px;
   text-decoration: none;
   max-width: 120px;
   text-align: center;
-  background-color:lightgrey;
+  background-color:$secondary;
   color:#fff;
 }
