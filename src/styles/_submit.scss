@@ -10,3 +10,31 @@
     margin:0 5px;
   }
 }
+
+table {
+  border-collapse:collapse;
+  white-space: normal;
+  width:100%;
+  tr:first-child th:first-child{
+    border:0;
+    background-color:initial;
+  }
+  th {
+    border:thin solid lightgrey;
+    margin:0;
+    background-color:lightgrey;
+    font-weight:normal;
+  }
+  td {
+    border:thin solid lightgrey;
+  }
+  input {
+    border:0;
+    width:100%;
+  }
+}
+
+.types-intro-usa {
+  th {
+  }
+}

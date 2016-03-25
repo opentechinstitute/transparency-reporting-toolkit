@@ -99,6 +99,24 @@ h1 {
     color: #fff;
     margin: 0 5px; }
 
+table {
+  border-collapse: collapse;
+  white-space: normal;
+  width: 100%; }
+  table tr:first-child th:first-child {
+    border: 0;
+    background-color: initial; }
+  table th {
+    border: thin solid lightgrey;
+    margin: 0;
+    background-color: lightgrey;
+    font-weight: normal; }
+  table td {
+    border: thin solid lightgrey; }
+  table input {
+    border: 0;
+    width: 100%; }
+
 body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   margin: 0;
