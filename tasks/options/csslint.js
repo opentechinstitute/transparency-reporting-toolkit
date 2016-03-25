@@ -9,6 +9,7 @@ module.exports = {
       overqualifiedElements: false,
       shorthand: false,
       emptyRules: 2,
+      boxModel: true,
     },
     src: ['./dest/styles/main.css']
   }

@@ -17,24 +17,39 @@ table {
   width:100%;
   tr:first-child th:first-child{
     border:0;
-    background-color:initial;
+    background-color:transparent;
   }
   th {
     border:thin solid lightgrey;
     margin:0;
     background-color:lightgrey;
     font-weight:normal;
+    padding:0.1em 1em;
   }
   td {
     border:thin solid lightgrey;
+    max-width:100px;
+    padding:0 0.5em;
   }
   input {
     border:0;
     width:100%;
+    padding:1em;
   }
 }
 
-.types-intro-usa {
-  th {
+.double-table {
+  margin-top:1em;
+  overflow:auto;
+  table {
+    width:49%;
+    float:left;
+    &:last-child {
+      float:right;
+    }
+    td:first-child {
+      background-color:lightgrey;
+      width:60%;
+    }
   }
 }

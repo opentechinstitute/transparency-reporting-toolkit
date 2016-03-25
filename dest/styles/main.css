@@ -105,17 +105,33 @@ table {
   width: 100%; }
   table tr:first-child th:first-child {
     border: 0;
-    background-color: initial; }
+    background-color: transparent; }
   table th {
     border: thin solid lightgrey;
     margin: 0;
     background-color: lightgrey;
-    font-weight: normal; }
+    font-weight: normal;
+    padding: 0.1em 1em; }
   table td {
-    border: thin solid lightgrey; }
+    border: thin solid lightgrey;
+    max-width: 100px;
+    padding: 0 0.5em; }
   table input {
     border: 0;
-    width: 100%; }
+    width: 100%;
+    padding: 1em; }
+
+.double-table {
+  margin-top: 1em;
+  overflow: auto; }
+  .double-table table {
+    width: 49%;
+    float: left; }
+    .double-table table:last-child {
+      float: right; }
+    .double-table table td:first-child {
+      background-color: lightgrey;
+      width: 60%; }
 
 body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -139,5 +155,10 @@ body {
   background-color: lightgrey;
   margin: 1.5em auto;
   display: block; }
+
+a {
+  text-decoration: none; }
+  a:visited {
+    color: inherit; }
 
 /*# sourceMappingURL=main.css.map */

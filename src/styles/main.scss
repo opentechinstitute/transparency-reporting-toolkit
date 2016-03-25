@@ -32,3 +32,10 @@ body {
   margin:1.5em auto;
   display:block;
 }
+
+a {
+  text-decoration: none;
+  &:visited {
+    color:inherit;
+  }
+}
