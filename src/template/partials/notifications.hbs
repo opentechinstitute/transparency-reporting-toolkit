@@ -1,0 +1,50 @@
+<div class="notifications autocalculate">
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">Sealed requests</th>
+      <th rowspan="2">Non-sealed requests, notice <span>was</span> provided</th>
+      <th rowspan="2">Non-sealed requests, notice <span>was not</span> provided</th>
+      <th rowspan="2">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        # Received
+      </td>
+      <td>
+        <input type="text" name="{{prefix}}-sealed"></input>
+      </td>
+      <td>
+        <input type="text" name="{{prefix}}-not-sealed-notice"></input>
+      </td>
+      <td>
+        <input type="text" name="{{prefix}}-not-sealed-no-notice"></input>
+      </td>
+      <td>
+        <input type="text" name="{{prefix}}-total" disabled="true" value=0></input>
+      </td>
+    </tr>
+    <tr class="disabled">
+      <td>
+        % of total
+      </td>
+      <td>
+        <input type="text" disabled="true" name="{{prefix}}-pc-sealed"></input>
+      </td>
+      <td>
+        <input type="text" disabled="true" name="{{prefix}}-pc-not-sealed-notice"></input>
+      </td>
+      <td>
+        <input type="text" disabled="true" name="{{prefix}}-pc-not-sealed-no-notice"></input>
+      </td>
+      <td>
+        <input type="text" name="{{prefix}}-pc-total" disabled="true" value=100%></input>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
