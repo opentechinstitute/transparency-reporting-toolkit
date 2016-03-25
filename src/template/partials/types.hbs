@@ -1,46 +1,64 @@
 <div class="request-types">
   <table>
     <thead>
-      <tr>
-        <th rowspan="2"></th>
-        <th rowspan="2">Search warrants</th>
-        <th rowspan="2">Wiretap orders</th>
-        <th rowspan="2">Pen register orders</th>
-        <th colspan="2">Subpoenas</th>
-        <th rowspan="2">Emergency Requests</th>
-        <th rowspan="2">Total</th>
-      </tr>
-      <tr>
-        <th>Criminal</th>
-        <th>Civil</th>
-      </tr>
+      {{#if isUSA}}
+        <tr>
+            <th rowspan="2"></th>
+            <th rowspan="2">Search warrants</th>
+            <th rowspan="2">Wiretap orders</th>
+            <th rowspan="2">Pen register orders</th>
+            <th colspan="2">Subpoenas</th>
+            <th rowspan="2">Emergency Requests</th>
+            <th rowspan="2">Total</th>
+        </tr>
+        <tr>
+          <th>Criminal</th>
+          <th>Civil</th>
+        </tr>
+      {{else}}
+        <tr>
+            <th rowspan="2"></th>
+            <th rowspan="2">Retrospective</th>
+            <th rowspan="2">Prospective</th>
+            <th rowspan="2">Total</th>
+        </tr>
+      {{/if}}
     </thead>
     <tbody>
       <tr>
         <td>
           # Received
         </td>
-        <td>
-          <input type="text" name="search-warrants"></input>
-        </td>
-        <td>
-          <input type="text" name="wiretap-orders"></input>
-        </td>
-        <td>
-          <input type="text" name="pen-register-orders"></input>
-        </td>
-        <td>
-          <input type="text" name="criminal-subpoenas"></input>
-        </td>
-        <td>
-          <input type="text" name="civil-subpoenas"></input>
-        </td>
-        <td>
-          <input type="text" name="emergency-requests"></input>
-        </td>
-        <td>
-          <input type="text" name="total" disabled="true" value=0></input>
-        </td>
+        {{#if isUSA}}
+          <td>
+            <input type="text" name="search-warrants"></input>
+          </td>
+          <td>
+            <input type="text" name="wiretap-orders"></input>
+          </td>
+          <td>
+            <input type="text" name="pen-register-orders"></input>
+          </td>
+          <td>
+            <input type="text" name="criminal-subpoenas"></input>
+          </td>
+          <td>
+            <input type="text" name="civil-subpoenas"></input>
+          </td>
+          <td>
+            <input type="text" name="emergency-requests"></input>
+          </td>
+        {{else}}
+          <td>
+            <input type="text" name="civil-subpoenas"></input>
+          </td>
+          <td>
+            <input type="text" name="emergency-requests"></input>
+          </td>
+        {{/if}}
+          <td>
+            <input type="text" name="{{prefix}}-total" disabled="true" value=0></input>
+          </td>
       </tr>
     </tbody>
   </table>
@@ -50,7 +68,7 @@
       <tbody>
         <td>Total # of selectors specified by all of the above requests</td>
         <td>
-          <input type="text" name="total-selectors-specified"></input>
+          <input type="text" name="{{prefix}}-selectors-specified"></input>
         </td>
       </tbody>
     </table>
@@ -58,7 +76,7 @@
       <tbody>
         <td>Total # of accounts responsive to all of the above requests</td>
         <td>
-          <input type="text" name="total-selectors-specified"></input>
+          <input type="text" name="{{prefix}}-accounts-responsive"></input>
         </td>
       </tbody>
     </table>
