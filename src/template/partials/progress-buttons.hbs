@@ -4,5 +4,5 @@
 <div class="progress-buttons">
   <a href="submit-report-{{subtract index 2}}.html" class="progression {{#if first}}disabled{{/if}}">< Back</a>
   <a class="progression" href="#">Save</a>
-  <a class="progression" href="submit-report-{{index}}.html">Next ></a>
+  <a class="progression" {{#if isEnd}} href="#" {{else}} href="submit-report-{{index}}.html"{{/if}}>Next ></a>
 </div>
