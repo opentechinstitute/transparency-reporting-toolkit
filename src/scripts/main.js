@@ -1,8 +1,15 @@
-var submitProcess = document.getElementsByClassName('overlay-background')[0];
+var submitProcess = [document.getElementsByClassName('overlay-background')[0], document.getElementsByClassName('overlay')[0]];
 
 document.getElementById("submit-report").addEventListener("click", function( event ) {
   event.preventDefault();
-  submitProcess.style.display = "block";
+  submitProcess[0].style.display = "block";
+  submitProcess[1].style.display = "block";
+}, false);
+
+submitProcess[0].addEventListener("click", function( event ) {
+  event.preventDefault();
+  submitProcess[0].style.display = "none";
+  submitProcess[1].style.display = "none";
 }, false);
 
 calculator('request-types', 6);
