@@ -138,10 +138,19 @@ a {
   height: 100%;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.75);
-  display: none; }
+  display: none;
+  top: 0;
+  left: 0; }
   .overlay-background .overlay {
     background-color: #fff;
-    background-color: rgba(255, 255, 255, 0.75); }
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 75%;
+    height: 75%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; }
 
 .time-selection {
   margin: 1.5em 0; }
