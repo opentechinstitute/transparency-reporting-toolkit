@@ -4,12 +4,13 @@ document.getElementById("submit-report").addEventListener("click", function( eve
   event.preventDefault();
   submitProcess[0].style.display = "block";
   submitProcess[1].style.display = "block";
+  document.getElementsByTagName('body')[0].style.overflow = "hidden";
 }, false);
 
 submitProcess[0].addEventListener("click", function( event ) {
-  event.preventDefault();
   submitProcess[0].style.display = "none";
   submitProcess[1].style.display = "none";
+  document.getElementsByTagName('body')[0].style.overflow = "initial";
 }, false);
 
 calculator('request-types', 6);
