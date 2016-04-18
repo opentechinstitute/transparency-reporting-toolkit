@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="styles/main.css" />
   {{#if additionalScript}}
     <script src='{{this.additionalScript}}' async defer></script>
+    <meta name="google-signin-client_id" content="{{clientID}}.apps.googleusercontent.com">
   {{/if}}
 </head>
 <body>
