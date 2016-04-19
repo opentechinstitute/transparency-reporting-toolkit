@@ -1,6 +1,6 @@
 var submitProcess = [document.getElementsByClassName('overlay-background')[0], document.getElementsByClassName('overlay')[0]];
 var user;
-var approved = ['test@test.com', 'gem...barrett1986@gmail.com'];
+var approved = ['test@test.com', 'gembarrett1986@gmail.com'];
 
 document.getElementById("submit-report").addEventListener("click", function( event ) {
   event.preventDefault();
