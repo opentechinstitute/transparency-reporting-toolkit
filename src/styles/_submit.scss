@@ -6,10 +6,15 @@
 }
 .time-options {
   display:inline;
-  p {
+  span {
     @include button;
     margin:0 5px;
     display:inline-block;
+    cursor: pointer;
+    opacity: 0.5;
+    &.selected {
+      opacity: 1;
+    }
   }
 }
 
