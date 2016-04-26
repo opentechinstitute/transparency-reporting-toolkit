@@ -19,7 +19,8 @@ module.exports = {
       helpers: ['./src/template/helpers/**/*.js'],
       layout: 'page.hbs',
       layoutdir: './src/template/layouts/',
-      partials: './src/template/partials/**/*'
+      partials: './src/template/partials/**/*',
+      ext:'.php'
     },
     files: [{
       cwd: './src/content/',

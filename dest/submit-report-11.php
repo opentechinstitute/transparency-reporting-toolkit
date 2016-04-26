@@ -2,7 +2,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>Transparency Reporting Toolkit</title>
-  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="./styles/main.css" />
 </head>
 <body>  <div class="nav-background">
     <div class="container nav">
@@ -18,8 +18,8 @@
   </div>  <div class="main-content container">
 <p><h1>Submit <span class="company-name"><span> transparency report</h1></p>
 <div class="intro section-title">
-  <h2>Outcomes/compliance with requests<span class="label">USA requests</span></h2>
-  <h3>Search warrants</h3>
+  <h2>Outcomes/compliance with requests<span class="label">non-USA requests</span></h2>
+
   <p>Go audemo C. Epotem untrum horei fac octus adhuctampl. Nihil vius auderis
 sinculicia audenis, porio etius es vatiam ium firmis consum di, cluderraecii
 perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
@@ -42,19 +42,19 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         # Received
       </td>
       <td>
-        <input type="text" name="search-rejected" ></input>
+        <input type="text" name="non-usa-outcomes-rejected" ></input>
       </td>
       <td>
-        <input type="text" name="search-no-data" ></input>
+        <input type="text" name="non-usa-outcomes-no-data" ></input>
       </td>
       <td>
-        <input type="text" name="search-content-disclosed" ></input>
+        <input type="text" name="non-usa-outcomes-content-disclosed" ></input>
       </td>
       <td>
-        <input type="text" name="search-non-content-disclosed" ></input>
+        <input type="text" name="non-usa-outcomes-non-content-disclosed" ></input>
       </td>
       <td>
-        <input type="text" name="search-total" disabled="true" value=0></input>
+        <input type="text" name="non-usa-outcomes-total" disabled="true" value=0></input>
       </td>
     </tr>
     <tr class="disabled">
@@ -62,31 +62,31 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         % of total
       </td>
       <td>
-        <input type="text" disabled="true" name="search-pc-rejected"></input>
+        <input type="text" disabled="true" name="non-usa-outcomes-pc-rejected"></input>
       </td>
       <td>
-        <input type="text" disabled="true" name="search-pc-no-data"></input>
+        <input type="text" disabled="true" name="non-usa-outcomes-pc-no-data"></input>
       </td>
       <td>
-        <input type="text" disabled="true" name="search-pc-content-disclosed"></input>
+        <input type="text" disabled="true" name="non-usa-outcomes-pc-content-disclosed"></input>
       </td>
       <td>
-        <input type="text" disabled="true" name="search-pc-non-content-disclosed"></input>
+        <input type="text" disabled="true" name="non-usa-outcomes-pc-non-content-disclosed"></input>
       </td>
       <td>
-        <input type="text" name="search-pc-total" disabled="true" value=100%></input>
+        <input type="text" name="non-usa-outcomes-pc-total" disabled="true" value=100%></input>
       </td>
     </tr>
 
   </tbody>
 </table>
 </div><div class="progress-bar">
-  <span style="width:15.4%"></span>
+  <span style="width:92.4%"></span>
 </div>
 <div class="progress-buttons">
-  <a href="submit-report-0.html" class="progression ">&lt; Back</a>
+  <a href="submit-report-10.html" class="progression ">&lt; Back</a>
   <a class="progression" href="#">Save</a>
-  <a class="progression"  href="submit-report-2.html">Next &gt;</a>
+  <a class="progression"  href="submit-report-12.html">Next &gt;</a>
 </div>  </div>
   <footer class="nav-background">
     <div class="container">

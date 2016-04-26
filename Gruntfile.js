@@ -26,6 +26,6 @@ module.exports = function(grunt) {
 
   grunt.initConfig(config);
 
-  grunt.registerTask('default', ['connect', 'watch']);
+  grunt.registerTask('default', ['php', 'watch']);
 
 };
