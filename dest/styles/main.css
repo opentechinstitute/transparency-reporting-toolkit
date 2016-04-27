@@ -155,6 +155,10 @@ a {
   z-index: 11;
   display: none;
   padding: 2em; }
+  .overlay #copyCompany {
+    visibility: hidden;
+    height: 0;
+    width: 0; }
 
 .time-selection {
   margin: 1.5em 0; }

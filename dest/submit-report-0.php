@@ -1,3 +1,6 @@
+<?php
+    include 'scripts/submit-0.php';
+?>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -105,9 +108,9 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
   <span style="width:7.7%"></span>
 </div>
 <div class="progress-buttons">
-  <a href="submit-report--1.html" class="progression disabled">&lt; Back</a>
+  <a href="submit-report--1.php" class="progression disabled">&lt; Back</a>
   <a class="progression" href="#">Save</a>
-  <a class="progression"  href="submit-report-1.html">Next &gt;</a>
+  <a class="progression"  href="submit-report-1.php">Next &gt;</a>
 </div>  </div>
   <footer class="nav-background">
     <div class="container">

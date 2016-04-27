@@ -23,4 +23,9 @@
   z-index:11;
   display:none;
   padding:2em;
+  #copyCompany {
+    visibility: hidden;
+    height:0;
+    width:0;
+  }
 }

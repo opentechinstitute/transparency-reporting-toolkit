@@ -12,8 +12,11 @@ function addListeners(period) {
   for (var i=0; i<period.length; i++) {
     period[i].addEventListener("click", function( event ) {
       for (var j=0; j<period.length; j++) {
-        if (j=this) {
+        if (period[j] == this) {
           this.classList.toggle('selected');
+        }
+        else {
+          period[j].classList.remove('selected');
         }
         // else if (j.classList.contains('selected')) {
         //   j.classList.remove('selected');

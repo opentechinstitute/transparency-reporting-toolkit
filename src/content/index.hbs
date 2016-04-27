@@ -15,7 +15,7 @@ clientID: "866567614664-plajrfu1bkmapbop03i30nh9vdmmdqe3"
   <p>{{this.intro-text}}</p>
 </div>
 <div class="intro-cta">
-  <input type="text" name="company" placeholder="Company name">
+  <input type="text" name="company" id="originalCompany" placeholder="Company name">
   </input>
   <p class="small">{{small-link}}</p>
   <div class="split-box-2">
@@ -30,7 +30,11 @@ clientID: "866567614664-plajrfu1bkmapbop03i30nh9vdmmdqe3"
 <div class="overlay">
   <p>{{overlay-p}}</p>
   <div class="g-signin2" data-onsuccess="onSignIn"></div>
-  <button id="to-form">Got it!</button>
+  <form action="grabCompany.php" method="post">
+    <input type="text" name="company" id="copyCompany" placeholder="Company name">
+    </input>
+    <input type="submit" value="Got it!" id="to-form"></input>
+  </form>
 </div>
 <div class="overlay-background">
 </div>

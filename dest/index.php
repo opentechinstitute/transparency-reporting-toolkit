@@ -1,3 +1,5 @@
+<?php
+?>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -23,7 +25,7 @@
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna eiusmod tempor incididunt.</p>
 </div>
 <div class="intro-cta">
-  <input type="text" name="company" placeholder="Company name">
+  <input type="text" name="company" id="originalCompany" placeholder="Company name">
   </input>
   <p class="small">Link to explore all data</p>
   <div class="split-box-2">
@@ -38,7 +40,11 @@
 <div class="overlay">
   <p>Expedita sunt illum rem. Quas eveniet eum molestiae. Voluptatum quam fugiat eligendi voluptas delectus iste quibusdam. Maxime tempore asperiores ducimus ex. Voluptate aut sint rerum.</p>
   <div class="g-signin2" data-onsuccess="onSignIn"></div>
-  <button id="to-form">Got it!</button>
+  <form action="grabCompany.php" method="post">
+    <input type="text" name="company" id="copyCompany" placeholder="Company name">
+    </input>
+    <input type="submit" value="Got it!" id="to-form"></input>
+  </form>
 </div>
 <div class="overlay-background">
 </div>
