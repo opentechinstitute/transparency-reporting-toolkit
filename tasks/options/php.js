@@ -1,11 +1,10 @@
 module.exports = {
   php: {
-    dev: {
-      options: {
-        port: 8000,
-        keepalive: true,
-        base: 'dest'
-      }
+    options: {
+      port: 8000,
+      keepalive: true,
+      open: true,
+      base: 'dest'
     }
   }
 }

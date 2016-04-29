@@ -1,6 +1,10 @@
 <?php
+  session_start();
   {{#if index}}
     include 'scripts/submit-{{subtract index 1}}.php';
+  {{else}}
+    $_SESSION['company'] = $_POST;
+    $company = $_SESSION['company'];
   {{/if}}
 ?>
 <html>
