@@ -24,15 +24,15 @@ submitProcess[0].addEventListener("click", function( event ) {
 }, false);
 
 document.getElementById("to-form").addEventListener("click", function( event ) {
-  event.preventDefault();
   var isApproved = include(approved, user);
   if (isApproved) {
     currentLoc = window.location;
     setTimeout(function () {
-      window.location = currentLoc.origin+"/dest/submit-report-0.php";
+      window.location = currentLoc.origin+"/submit-report-0.php";
     }, 1000);
   } else {
     alert("Sorry, your account hasn't been approved for data upload.");
+    event.preventDefault();
   }
 }, false);
 

@@ -44,16 +44,12 @@
   <p>Expedita sunt illum rem. Quas eveniet eum molestiae. Voluptatum quam fugiat eligendi voluptas delectus iste quibusdam. Maxime tempore asperiores ducimus ex. Voluptate aut sint rerum.</p>
   <div class="g-signin2" data-onsuccess="onSignIn"></div>
   <form action="submit-report-0.php" method="post">
-    <input type="text" name="company" id="copyCompany" placeholder="Company name">
-    </input>
-    <input type="submit" value="Got it!" id="to-form"></input>
+    <input type="text" name="company" id="copyCompany" placeholder="Company name"/>
+    <input type="submit" name="company-submit" value="Got it!" id="to-form"></input>
   </form>
   <form action="submit-report-0.php" method="post">
-  <input name="my_html_input_tag"/>
-
-  <input type="submit" name="my_form_submit_button"
-         value="Click here for penguins"/>
-
+    <input name="my_html_input_tag"/>
+    <input type="submit" name="my_form_submit_button" value="Click here for penguins"/>
   </form>
 
 </div>
