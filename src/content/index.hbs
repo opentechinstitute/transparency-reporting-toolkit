@@ -15,7 +15,8 @@ clientID: "866567614664-plajrfu1bkmapbop03i30nh9vdmmdqe3"
   <p>{{this.intro-text}}</p>
 </div>
 <div class="intro-cta">
-  <input type="text" name="company" id="originalCompany" placeholder="Company name">
+  <form>
+  <input type="text" name="company" required value="" id="originalCompany" placeholder="Company name">
   </input>
   <p class="small">{{small-link}}</p>
   <div class="split-box-2">
@@ -23,9 +24,10 @@ clientID: "866567614664-plajrfu1bkmapbop03i30nh9vdmmdqe3"
     <p>{{explore-p}}</p>
   </div>
   <div class="split-box-2">
-    <a id="submit-report" href="submit-report-0.html">{{submit-link}}</a>
+    <input type="submit" id="submit-report" value="Submit report"></input>
     <p>{{submit-p}}</p>
   </div>
+</form>
 </div>
 <div class="overlay">
   <p>{{overlay-p}}</p>
@@ -34,11 +36,6 @@ clientID: "866567614664-plajrfu1bkmapbop03i30nh9vdmmdqe3"
     <input type="text" name="company" id="copyCompany" placeholder="Company name"/>
     <input type="submit" name="company-submit" value="Got it!" id="to-form"></input>
   </form>
-  <form action="submit-report-0.php" method="post">
-    <input name="my_html_input_tag"/>
-    <input type="submit" name="my_form_submit_button" value="Click here for penguins"/>
-  </form>
-
 </div>
 <div class="overlay-background">
 </div>

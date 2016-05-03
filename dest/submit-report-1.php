@@ -1,5 +1,4 @@
 <?php
-  session_start();
     include 'scripts/submit-1.php';
 ?>
 <html>
@@ -12,8 +11,8 @@
     <div class="container nav">
       <ul class="inline-list">
         <li><a href="./">Transparency Reporting Toolkit</a></li>
-        <li>Explore reports</li>
-        <li>Submit report</li>
+        <li><a href="./explore.html">Explore reports</a></li>
+        <li><a href="./submit-report-0.php">Submit report</a></li>
         <!-- <li>About team</li>
         <li>About Transparency Reports</li>
         <li>Dashboard</li> -->

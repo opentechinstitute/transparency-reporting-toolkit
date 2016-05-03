@@ -1,7 +1,4 @@
 <?php
-  session_start();
-    $_SESSION['company'] = $_POST;
-    $company = $_SESSION['company'];
 ?>
 <html>
 <head>
@@ -15,8 +12,8 @@
     <div class="container nav">
       <ul class="inline-list">
         <li><a href="./">Transparency Reporting Toolkit</a></li>
-        <li>Explore reports</li>
-        <li>Submit report</li>
+        <li><a href="./explore.html">Explore reports</a></li>
+        <li><a href="./submit-report-0.php">Submit report</a></li>
         <!-- <li>About team</li>
         <li>About Transparency Reports</li>
         <li>Dashboard</li> -->
@@ -28,7 +25,8 @@
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna eiusmod tempor incididunt.</p>
 </div>
 <div class="intro-cta">
-  <input type="text" name="company" id="originalCompany" placeholder="Company name">
+  <form>
+  <input type="text" name="company" required value="" id="originalCompany" placeholder="Company name">
   </input>
   <p class="small">Link to explore all data</p>
   <div class="split-box-2">
@@ -36,9 +34,10 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
   </div>
   <div class="split-box-2">
-    <a id="submit-report" href="submit-report-0.html">Submit report</a>
+    <input type="submit" id="submit-report" value="Submit report"></input>
     <p>Go audemo C. Epotem untrum horei fac octus adhuctampl. Nihil vius auderis sinculicia audenis, porio etius es vatiam ium firmis.</p>
   </div>
+</form>
 </div>
 <div class="overlay">
   <p>Expedita sunt illum rem. Quas eveniet eum molestiae. Voluptatum quam fugiat eligendi voluptas delectus iste quibusdam. Maxime tempore asperiores ducimus ex. Voluptate aut sint rerum.</p>
@@ -47,11 +46,6 @@
     <input type="text" name="company" id="copyCompany" placeholder="Company name"/>
     <input type="submit" name="company-submit" value="Got it!" id="to-form"></input>
   </form>
-  <form action="submit-report-0.php" method="post">
-    <input name="my_html_input_tag"/>
-    <input type="submit" name="my_form_submit_button" value="Click here for penguins"/>
-  </form>
-
 </div>
 <div class="overlay-background">
 </div>

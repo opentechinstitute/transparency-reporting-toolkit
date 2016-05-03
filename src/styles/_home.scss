@@ -19,11 +19,12 @@
   .small {
     text-align: center;
   }
-  a {
+  a, input[type="submit"] {
     @include button;
     display:block;
     margin:0 auto;
     font-size: 1em;
+    cursor: pointer;
   }
 }
 

@@ -80,7 +80,7 @@ footer li {
   overflow: auto; }
   .intro-cta .small {
     text-align: center; }
-  .intro-cta a {
+  .intro-cta a, .intro-cta input[type="submit"] {
     border: solid thin lightgrey;
     border-radius: 15px;
     padding: 10px;
@@ -91,7 +91,8 @@ footer li {
     color: #fff;
     display: block;
     margin: 0 auto;
-    font-size: 1em; }
+    font-size: 1em;
+    cursor: pointer; }
 
 input[name="company"] {
   width: 50%;
