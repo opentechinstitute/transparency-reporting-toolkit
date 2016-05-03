@@ -9,15 +9,12 @@ function include(arr,obj) {
 }
 
 document.getElementById("submit-report").addEventListener("click", function( event ) {
-  event.preventDefault();
   if (originalCompany.checkValidity()) {
+    event.preventDefault();
     submitProcess[0].style.display = "block";
     submitProcess[1].style.display = "block";
     document.getElementsByTagName('body')[0].style.overflow = "hidden";
     copyCompany.value = originalCompany.value;
-  } else {
-    console.log('something');
-    // originalCompany.style.border="blue 1px solid";
   }
 }, false);
 
@@ -48,8 +45,3 @@ function onSignIn(googleUser) {
   console.log('Image URL: ' + profile.getImageUrl());
   user = profile.getEmail();
 }
-
-originalCompany.addEventListener("invalid", function(evt) {
-  originalCompany.nextSibling.innerText = "WTF WTF WTF";
-  console.log('huh?');
-});
