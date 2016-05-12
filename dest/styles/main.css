@@ -19,7 +19,7 @@ ul {
   line-height: 1.5em; }
 
 .nav-background {
-  background-color: grey;
+  background-color: #5CA5D9;
   color: #fff; }
 
 footer li {
@@ -30,13 +30,13 @@ footer li {
   margin: 1.5em 0; }
 
 .progression {
-  border: solid thin lightgrey;
+  border: solid thin #24678F;
   border-radius: 15px;
   padding: 10px;
   text-decoration: none;
   max-width: 120px;
   text-align: center;
-  background-color: grey;
+  background-color: #5CA5D9;
   color: #fff;
   display: inline-block; }
 
@@ -81,13 +81,13 @@ footer li {
   .intro-cta .small {
     text-align: center; }
   .intro-cta a, .intro-cta input[type="submit"] {
-    border: solid thin lightgrey;
+    border: solid thin #24678F;
     border-radius: 15px;
     padding: 10px;
     text-decoration: none;
     max-width: 120px;
     text-align: center;
-    background-color: grey;
+    background-color: #5CA5D9;
     color: #fff;
     display: block;
     margin: 0 auto;
@@ -114,7 +114,7 @@ h1 {
   padding: 0.25em;
   margin-left: 0.5em;
   vertical-align: middle;
-  background-color: grey;
+  background-color: #5CA5D9;
   color: #fff; }
 
 a {
@@ -123,7 +123,7 @@ a {
     color: #fff; }
 
 .progression:hover {
-  background-color: lightgrey;
+  background-color: #24678F;
   color: #fff; }
 
 .disabled {
@@ -169,13 +169,13 @@ a {
 .time-options {
   display: inline; }
   .time-options span {
-    border: solid thin lightgrey;
+    border: solid thin #24678F;
     border-radius: 15px;
     padding: 10px;
     text-decoration: none;
     max-width: 120px;
     text-align: center;
-    background-color: grey;
+    background-color: #5CA5D9;
     color: #fff;
     margin: 0 5px;
     display: inline-block;

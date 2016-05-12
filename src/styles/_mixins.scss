@@ -2,17 +2,21 @@ $primary: grey;
 $secondary: lightgrey;
 $light-text: #fff;
 
+$otiblue: #5CA5D9;
+$otilight: #24678F;
+$otidark: #89CCA6;
+
 @mixin low-contrast {
-  background-color: $secondary;
+  background-color: $otilight;
   color: $light-text;
 }
 @mixin high-contrast {
-  background-color: $primary;
+  background-color: $otiblue;
   color: $light-text;
 }
 
 @mixin button {
-  border:solid thin $secondary;
+  border:solid thin $otilight;
   border-radius: 15px;
   padding:10px;
   text-decoration: none;
