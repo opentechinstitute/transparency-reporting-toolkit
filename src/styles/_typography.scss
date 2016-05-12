@@ -22,7 +22,7 @@ a {
 }
 
 .progression:hover {
-  @include low-contrast;
+  @include high-contrast;
 }
 
 .disabled {

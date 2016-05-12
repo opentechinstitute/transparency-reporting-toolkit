@@ -3,26 +3,30 @@ $secondary: lightgrey;
 $light-text: #fff;
 
 $otiblue: #5CA5D9;
-$otilight: #24678F;
-$otidark: #89CCA6;
+$otilight: #B9E5FA;
+$otidark: #24678F;
 
 @mixin low-contrast {
   background-color: $otilight;
   color: $light-text;
 }
-@mixin high-contrast {
+@mixin mid-contrast {
   background-color: $otiblue;
+  color: $light-text;
+}
+@mixin high-contrast {
+  background-color: $otidark;
   color: $light-text;
 }
 
 @mixin button {
-  border:solid thin $otilight;
+  border:solid thin $otiblue;
   border-radius: 15px;
   padding:10px;
   text-decoration: none;
   max-width: 120px;
   text-align: center;
-  @include high-contrast;
+  @include mid-contrast;
 }
 
 @mixin section-margins {
