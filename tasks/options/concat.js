@@ -9,6 +9,10 @@ module.exports = {
       dest: 'dest/scripts/submit.js'
     },
     {
+      src: ['src/scripts/explore/*.js'],
+      dest: 'dest/scripts/explore.js'
+    },
+    {
       src: ['src/scripts/*.js'],
       dest: 'dest/scripts/main.js'
     }
