@@ -102,6 +102,10 @@ input[name="company"] {
   padding: 10px;
   margin: 0 auto;
   display: block; }
+  input[name="company"]:not(:focus):invalid {
+    outline: none; }
+  input[name="company"]:focus:invalid {
+    outline: 2px solid red; }
 
 .small {
   font-size: 0.75em; }
@@ -157,7 +161,6 @@ a {
   display: none;
   padding: 2em; }
   .overlay #copyCompany {
-    visibility: hidden;
     height: 0;
     width: 0; }
 

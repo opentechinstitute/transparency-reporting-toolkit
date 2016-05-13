@@ -36,5 +36,11 @@ input[name="company"] {
   padding:10px;
   margin:0 auto;
   display:block;
+  &:not(:focus):invalid {
+    outline: none;
+  }
+  &:focus:invalid {
+    outline: 2px solid red;
+  }
 }
 
