@@ -21,10 +21,15 @@
 <p><h1>Explore transparency report</h1></p>
 <div class="intro-search">
   <p>Show me
-  <select name="search-company-names" id="search-companies">
-    <option value="All companies" selected>All companies</option>
+  <select name="search-gov-countries" id="search-govs">
+    <option value="USA government" selected>USA government</option>
+    <option value="non-USA government">non-USA government</option>
   </select>
-  data for
+  requests to
+  <select name="search-company-names" id="search-companies">
+    <option value="all companies" selected>all companies</option>
+  </select>
+  for
   <select name="search-filter" id="search-filter">
     <option value="all" selected>all</option>
     <option value="rejected">all rejected</option>
@@ -52,11 +57,6 @@
       <option value="non-sealed requests - notice">non-sealed requests, notice provided</option>
       <option value="non-sealed requests">non-sealed requests, notice not provided</option>
     </optgroup>
-  </select>
-  from
-  <select name="search-gov-countries" id="search-govs">
-    <option value="USA government" selected>USA government</option>
-    <option value="non-USA government">Non-USA government</option>
   </select>
 </div><div class="advanced-search">
   <fieldset>
