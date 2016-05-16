@@ -25,8 +25,10 @@ if (isHome()) {
   clickTrigger(submitLink);
 }
 
+// not sure where I was going with this
 var element = document.getElementById("to-form");
 
+// function to add click listener
 function clickTrigger(el) {
   el.addEventListener("click", function(event) {
     event.preventDefault();
@@ -51,12 +53,14 @@ button link (only home page):
 - validate main box value, show overlay, copy to 2nd box and hide it
 */
 
+// does what it says on the tin
 function showOverlay() {
   submitProcess[0].style.display = "block";
   submitProcess[1].style.display = "block";
   document.getElementsByTagName('body')[0].style.overflow = "hidden";
 }
 
+// the yin to showOverlay()'s yang
 submitProcess[0].addEventListener("click", function( event ) {
   submitProcess[0].style.display = "none";
   submitProcess[1].style.display = "none";
@@ -75,6 +79,7 @@ var approved = ['gembarrett1986@gmail.com'];
 function include(arr,obj) {
     return (arr.indexOf(obj) != -1);
 }
+
 
 document.getElementById("to-form").addEventListener("click", function( event ) {
   var isApproved = include(approved, user);

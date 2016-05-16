@@ -1,4 +1,6 @@
 <?php
+  session_start();
+    include 'scripts/save-data.php';
     include 'scripts/submit-0.php';
 ?>
 <html>
@@ -21,14 +23,15 @@
       </ul>
     </div>
   </div>  <div class="main-content container">
-<p><h1>Submit <span class="company-name"><span> transparency report</h1>
+<p><h1>Submit <span class="company-name"><span> transparency report</h1></p>
+<form>
   <div class="time-selection">
     <p>Select time period:</p>
     <div class="time-options small">
       <p class="months"><span>Jan-June</span><span>July-Dec</span></p>
       <p class="years"><span>2016</span><span>2015</span><span>2014</span><span>2013</span><span>Other (click to edit)</span></p>
     </div>
-  </div></p>
+  </div>
 <div class="intro section-title">
   <h2>Types of legal processes received<span class="label">USA requests</span></h2>
 
@@ -113,7 +116,8 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
   <a href="submit-report--1.php" class="progression disabled">&lt; Back</a>
   <a class="progression" href="#">Save</a>
   <a class="progression"  href="submit-report-1.php">Next &gt;</a>
-</div>  </div>
+</div></form>
+  </div>
   <div class="overlay">
     <p></p>
     <div class="g-signin2" data-onsuccess="onSignIn"></div>

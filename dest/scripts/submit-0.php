@@ -1,6 +1,4 @@
 <?php
-// if (isset($_POST)) {
-  $_SESSION['company'] = $_POST['company'];
-  echo json_encode($_SESSION['company']);
-// }
+$_SESSION['company_name'] = $_POST['company'];
+echo json_encode($_SESSION['company_name']);
 ?>
