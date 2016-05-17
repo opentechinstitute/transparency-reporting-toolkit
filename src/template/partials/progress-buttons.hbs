@@ -3,6 +3,6 @@
 </div>
 <div class="progress-buttons">
   <a href="submit-report-{{subtract index 2}}.php" class="progression {{#if first}}disabled{{/if}}">< Back</a>
-  <a class="progression" href="#">Save</a>
+  <input type="submit" name="save-section-{{subtract index 1}}" value="Save" id="save-section-{{subtract index 1}}"></input>
   <a class="progression" {{#if isEnd}} href="#" {{else}} href="submit-report-{{index}}.php"{{/if}}>Next ></a>
 </div>

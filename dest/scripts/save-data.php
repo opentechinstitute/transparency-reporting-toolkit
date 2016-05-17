@@ -1,4 +1,5 @@
-<?php if ($handle = opendir('resources/')) {
+<?php
+if ($handle = opendir('resources/')) {
     while (false !== ($entry = readdir($handle))) {
       if ($entry != "." && $entry != "..") {
         $path = "resources/".$entry;

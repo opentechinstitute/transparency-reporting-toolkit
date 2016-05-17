@@ -1,3 +1,4 @@
 <?php
-echo json_encode($_SESSION['company']);
+echo json_encode($_SESSION['company_name']);
+
 ?>

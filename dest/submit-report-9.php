@@ -1,6 +1,5 @@
 <?php
   session_start();
-    include 'scripts/save-data.php';
     include 'scripts/submit-9.php';
 ?>
 <html>
@@ -85,7 +84,7 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
 </div>
 <div class="progress-buttons">
   <a href="submit-report-8.php" class="progression ">&lt; Back</a>
-  <a class="progression" href="#">Save</a>
+  <input type="submit" name="save-section-9" value="Save" id="save-section-9"></input>
   <a class="progression"  href="submit-report-10.php">Next &gt;</a>
 </div>  </div>
   <div class="overlay">
