@@ -1,5 +1,6 @@
 <?php
   session_start();
+  include 'scripts/save-data.php';
     include 'scripts/submit-0.php';
 ?>
 <html>
@@ -23,7 +24,7 @@
     </div>
   </div>  <div class="main-content container">
 <p><h1>Submit <span class="company-name"><span> transparency report</h1></p>
-<form  action="scripts/save-data.php" method="post">
+<form>
   <div class="time-selection">
     <p>Select time period:</p>
     <div class="time-options small">

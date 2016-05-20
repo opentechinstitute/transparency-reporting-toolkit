@@ -1,5 +1,6 @@
 <?php
   session_start();
+  include 'scripts/save-data.php';
 ?>
 <html>
 <head>
