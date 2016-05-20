@@ -47,10 +47,10 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
           # Received
         </td>
           <td>
-            <input type="text" name="civil-subpoenas"></input>
+            <input type="text" name="retrospective"></input>
           </td>
           <td>
-            <input type="text" name="emergency-requests"></input>
+            <input type="text" name="prospective"></input>
           </td>
           <td>
             <input type="text" name="non-usa-types-total" disabled="true" value=0></input>

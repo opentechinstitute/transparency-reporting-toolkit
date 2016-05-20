@@ -1,7 +1,6 @@
 <?php
 
 function getKey() {
-  echo 'bar';
   if ($handle = opendir('./scripts/resources/')) {
       while (false !== ($entry = readdir($handle))) {
         if ($entry != "." && $entry != "..") {

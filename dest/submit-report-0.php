@@ -62,6 +62,7 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         <td>
           # Received
         </td>
+        <form action="submit-report-1.php" method="post">
           <td>
             <input type="text" name="search-warrants"></input>
           </td>

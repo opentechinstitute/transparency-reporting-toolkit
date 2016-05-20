@@ -31,6 +31,7 @@
           # Received
         </td>
         {{#if isUSA}}
+        <form action="submit-report-1.php" method="post">
           <td>
             <input type="text" name="search-warrants"></input>
           </td>
@@ -54,10 +55,10 @@
           </td>
         {{else}}
           <td>
-            <input type="text" name="civil-subpoenas"></input>
+            <input type="text" name="retrospective"></input>
           </td>
           <td>
-            <input type="text" name="emergency-requests"></input>
+            <input type="text" name="prospective"></input>
           </td>
         {{/if}}
           <td>
