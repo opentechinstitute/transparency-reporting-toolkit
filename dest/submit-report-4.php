@@ -24,13 +24,14 @@
     </div>
   </div>  <div class="main-content container">
 <p><h1>Submit <span class="company-name"><span> transparency report</h1></p>
-<div class="intro section-title">
+<p><div class="intro section-title">
   <h2>Outcomes/compliance with requests<span class="label">USA requests</span></h2>
   <h3>Other court orders</h3>
   <p>Go audemo C. Epotem untrum horei fac octus adhuctampl. Nihil vius auderis
 sinculicia audenis, porio etius es vatiam ium firmis consum di, cluderraecii
 perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
-</div>
+</div></p>
+<form name="submitSection4" method="post" action="submit-report-5.php">
 <div class="outcomes autocalculate">
 <table>
   <thead>
@@ -94,7 +95,8 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
   <a href="submit-report-3.php" class="progression ">&lt; Back</a>
   <input type="submit" name="save-section-4" value="Save" id="save-section-4"></input>
   <a id="submitSectionButton4" class="progression"  href="submit-report-5.php">Next &gt;</a>
-</div>  </div>
+</div></form>
+  </div>
   <div class="overlay">
     <p></p>
     <div class="g-signin2" data-onsuccess="onSignIn"></div>

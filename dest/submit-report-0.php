@@ -24,7 +24,7 @@
     </div>
   </div>  <div class="main-content container">
 <p><h1>Submit <span class="company-name"><span> transparency report</h1></p>
-<form name="submitSection0" method="post">
+<form name="submitSection0" method="post" action="submit-report-1.php">
   <div class="time-selection">
     <p>Select time period:</p>
     <div class="time-options small">
