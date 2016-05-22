@@ -24,7 +24,7 @@
     </div>
   </div>  <div class="main-content container">
 <p><h1>Submit <span class="company-name"><span> transparency report</h1></p>
-<form>
+<form name="submitSection0" method="post">
   <div class="time-selection">
     <p>Select time period:</p>
     <div class="time-options small">
@@ -116,7 +116,7 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
 <div class="progress-buttons">
   <a href="submit-report--1.php" class="progression disabled">&lt; Back</a>
   <input type="submit" name="save-section-0" value="Save" id="save-section-0"></input>
-  <a class="progression"  href="submit-report-1.php">Next &gt;</a>
+  <a id="submitSectionButton0" class="progression"  href="submit-report-1.php">Next &gt;</a>
 </div></form>
   </div>
   <div class="overlay">

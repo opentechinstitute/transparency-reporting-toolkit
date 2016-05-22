@@ -6,7 +6,7 @@ $_SESSION['usa_other-orders_total'] = $_POST['other-court-orders'];
 $_SESSION['usa_criminal-subpoenas_total'] = $_POST['criminal-subpoenas'];
 $_SESSION['usa_civil-subpoenas_total'] = $_POST['civil-subpoenas'];
 $_SESSION['usa_emergency-requests_total'] = $_POST['emergency-requests'];
-echo $_SESSION['company_name'] ;
+echo $_SESSION['company_name'];
 $url = "https://data.opentechinstitute.org/api/3/action/";
 $auth_key = getKey();
 $resource_id = "78377408-b750-4db9-bffb-dec9ef9c9477";
@@ -41,5 +41,4 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_FRESH_CONNECT, true);
 $results = curl_exec($ch);
 curl_close($ch);
-echo $results;
 ?>
