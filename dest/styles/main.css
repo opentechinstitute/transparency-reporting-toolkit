@@ -166,7 +166,7 @@ a {
     height: 0;
     width: 0; }
 
-.submitting-user {
+#submitting-user {
   visibility: hidden; }
 
 .time-selection {

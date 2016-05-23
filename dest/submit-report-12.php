@@ -84,7 +84,7 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
 </div>
 <div class="progress-buttons">
   <a href="submit-report-11.php" class="progression ">&lt; Back</a>
-  <input type="submit" class="progression" name="save-section-12" value="Next >" id="save-section-12"></input>
+  <input type="submit" class="progression" name="save-section-12" value=" Next >" id="save-section-12"></input>
   <!-- <a id="submitSectionButton12" class="progression"  href="#" >Next ></a> -->
 </div></form>
   </div>

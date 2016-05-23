@@ -1,6 +1,6 @@
 <?php
   session_start();
-    include 'scripts/submit-13.php';
+    include 'scripts/submit-14.php';
 ?>
 <html>
 <head>
@@ -22,25 +22,7 @@
       </ul>
     </div>
   </div>  <div class="main-content container">
-<p><form name="final-submission" method="post" action="finish.php">
-  &lt;?php
-echo $_SESSION[&#39;company_name&#39;];
-echo $_SESSION[&#39;usa_search-warrants_total&#39;];
-echo $_SESSION[&#39;usa_wiretap-orders_total&#39;];
-echo $_SESSION[&#39;usa_pen-registers_total&#39;];
-echo $_SESSION[&#39;usa_other-orders_total&#39;];
-echo $_SESSION[&#39;usa_criminal-subpoenas_total&#39;];
-echo $_SESSION[&#39;usa_civil-subpoenas_total&#39;];
-echo $_SESSION[&#39;usa_emergency-requests_total&#39;];
-?&gt;</p>
-<div class="progress-bar">
-  <span style="width:%"></span>
-</div>
-<div class="progress-buttons">
-  <a href="submit-report-12.php" class="progression ">&lt; Back</a>
-  <input type="submit" class="progression" name="save-section-13" value=" Submit " id="save-section-13"></input>
-  <!-- <a id="submitSectionButton13" class="progression"  href="submit-report-14.php">Next ></a> -->
-</div>  </div>
+  </div>
   <div class="overlay">
     <p></p>
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
