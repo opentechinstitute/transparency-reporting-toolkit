@@ -1,8 +1,9 @@
 <?php
   session_start();
-  include 'scripts/save-data.php';
   {{#if index}}
     include 'scripts/submit-{{subtract index 1}}.php';
+  {{else}}
+    include 'scripts/overview.php';
   {{/if}}
 ?>
 <html>

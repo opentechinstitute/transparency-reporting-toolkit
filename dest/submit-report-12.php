@@ -1,6 +1,5 @@
 <?php
   session_start();
-  include 'scripts/save-data.php';
     include 'scripts/submit-12.php';
 ?>
 <html>
@@ -30,7 +29,7 @@
 sinculicia audenis, porio etius es vatiam ium firmis consum di, cluderraecii
 perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
 </div></p>
-<form name="submitSection12" method="post" action="submit-report-13.php">
+<form name="submitSection12" method="post" action="overview.php">
 <div class="notifications autocalculate">
 <table>
   <thead>
@@ -85,8 +84,8 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
 </div>
 <div class="progress-buttons">
   <a href="submit-report-11.php" class="progression ">&lt; Back</a>
-  <input type="submit" name="save-section-12" value="Save" id="save-section-12"></input>
-  <a id="submitSectionButton12" class="progression"  href="#" >Next &gt;</a>
+  <input type="submit" class="progression" name="save-section-12" value="Next >" id="save-section-12"></input>
+  <!-- <a id="submitSectionButton12" class="progression"  href="#" >Next ></a> -->
 </div></form>
   </div>
   <div class="overlay">
