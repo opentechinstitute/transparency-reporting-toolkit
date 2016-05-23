@@ -16,12 +16,22 @@
         <li><a href="./">Transparency Reporting Toolkit</a></li>
         <li><a href="./explore.php">Explore reports</a></li>
         <li><a id="submit-link" href="./submit-report-0.php">Submit report</a></li>
-        <!-- <li>About team</li>
-        <li>About Transparency Reports</li>
-        <li>Dashboard</li> -->
+        <li><a id="about" href="about.php">About us</a></li>
+        <li><a id="intro" href="intro.php">Transparency reports</a></li>
+        <!-- <li>Dashboard</li> -->
       </ul>
     </div>
   </div>  <div class="main-content container">
+<p>  &lt;?php
+echo $_SESSION[&#39;company_name&#39;];
+echo $_SESSION[&#39;usa_search-warrants_total&#39;];
+echo $_SESSION[&#39;usa_wiretap-orders_total&#39;];
+echo $_SESSION[&#39;usa_pen-registers_total&#39;];
+echo $_SESSION[&#39;usa_other-orders_total&#39;];
+echo $_SESSION[&#39;usa_criminal-subpoenas_total&#39;];
+echo $_SESSION[&#39;usa_civil-subpoenas_total&#39;];
+echo $_SESSION[&#39;usa_emergency-requests_total&#39;];
+?&gt;</p>
   </div>
   <div class="overlay">
     <p></p>

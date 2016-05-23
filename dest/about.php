@@ -21,29 +21,9 @@
       </ul>
     </div>
   </div>  <div class="main-content container">
-<div class="intro-area">
-  <img src="#" class="placeholder" />
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna eiusmod tempor incididunt.</p>
-</div>
-<div class="intro-cta">
-  <form>
-  <input type="text" name="company" required value="" id="originalCompany" placeholder="Company name">
-  </input>
-  <p class="small">Link to explore all data</p>
-  <div class="split-box-2">
-    <a id="explore" href="explore-reports.html">Explore report</a>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-  </div>
-  <div class="split-box-2">
-    <input type="submit" id="submit-report" value="Submit report"></input>
-    <p>Go audemo C. Epotem untrum horei fac octus adhuctampl. Nihil vius auderis sinculicia audenis, porio etius es vatiam ium firmis.</p>
-  </div>
-</form>
-</div>
-
   </div>
   <div class="overlay">
-    <p>Expedita sunt illum rem. Quas eveniet eum molestiae. Voluptatum quam fugiat eligendi voluptas delectus iste quibusdam. Maxime tempore asperiores ducimus ex. Voluptate aut sint rerum.</p>
+    <p></p>
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
     <form action="submit-report-0.php" method="post">
       <input type="text" name="company" id="copyCompany" placeholder="Company name"/>
@@ -64,7 +44,7 @@
       </ul>
     </div>
     <script src='scripts/main.js'></script>
-    <script src='scripts/home.js'></script>
+    <script src='scripts/.js'></script>
   </footer>
 </body>
 </html>

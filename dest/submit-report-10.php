@@ -16,9 +16,9 @@
         <li><a href="./">Transparency Reporting Toolkit</a></li>
         <li><a href="./explore.php">Explore reports</a></li>
         <li><a id="submit-link" href="./submit-report-0.php">Submit report</a></li>
-        <!-- <li>About team</li>
-        <li>About Transparency Reports</li>
-        <li>Dashboard</li> -->
+        <li><a id="about" href="about.php">About us</a></li>
+        <li><a id="intro" href="intro.php">Transparency reports</a></li>
+        <!-- <li>Dashboard</li> -->
       </ul>
     </div>
   </div>  <div class="main-content container">

@@ -10,15 +10,15 @@ function calculator(section, maxNo) {
   // set the value of the
   totalInput.value = 0;
   // filter down to only required ones
-  if (this.value != "") {
-    for (var i=0; i<maxNo;i++){
-      allInputs[i].oninput = function() {
-        total = parseFloat(this.value+total);
-        console.log(total);
-        totalInput.value = total;
-      }
-    }
-  }
+  // if (this.value != "") {
+  //   for (var i=0; i<maxNo;i++){
+  //     allInputs[i].oninput = function() {
+  //       total = parseFloat(this.value+total);
+  //       console.log(total);
+  //       totalInput.value = total;
+  //     }
+  //   }
+  // }
 }
 
 // what page are we on?
