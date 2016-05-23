@@ -24,7 +24,10 @@ $records = array();
 
 $maxNo = count($titles);
 
+$newRecord = new stdClass();
+
 for ($i = 0; $i < $maxNo-1; $i++) {
+  // set up fields
   ${'field'.$i} = new stdClass();
   ${'field'.$i}->id = $titles[$i];
   if ($i == 0 || $i == 1) {
@@ -34,10 +37,13 @@ for ($i = 0; $i < $maxNo-1; $i++) {
   }
   $fields[] = ${'field'.$i};
 
-  ${'record'.$i} = new stdClass();
-  ${'record'.$i}->$titles[$i] = $_SESSION[$titles[$i]];
-  $records[] = ${'record'.$i};
+  // set up record
+  // ${'record'.$i} = new stdClass();
+  $newRecord->$titles[$i] = $_SESSION[$titles[$i]];
 }
+
+$records[] = $newRecord;
+
 
 $data->fields = $fields;
 $data->records = $records;
