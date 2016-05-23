@@ -8,4 +8,5 @@ $_SESSION['non-usa_user-notification_not-sealed_number'] = $_POST['non-usa-notif
 $_SESSION['non-usa_user-notification_not-sealed_perc'] = $_POST['non-usa-notifications-pc-not-sealed-no-notice'];
 $_SESSION['non-usa_user-notification_total'] = $_POST['non-usa-notifications-total'];
 
+print_r($_SESSION);
 ?>
