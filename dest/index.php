@@ -31,7 +31,7 @@
   </input>
   <p class="small">Link to explore all data</p>
   <div class="split-box-2">
-    <a id="explore" href="explore-reports.html">Explore report</a>
+    <a id="explore" href="explore.php">Explore report</a>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
   </div>
   <div class="split-box-2">

@@ -23,7 +23,7 @@
     </div>
   </div>  <div class="main-content container">
 <p><form name="final-submission" method="post" action="finish.php">
-  &lt;?php
+&lt;?php
 echo $_SESSION[&#39;company_name&#39;];
 echo $_SESSION[&#39;usa_search-warrants_total&#39;];
 echo $_SESSION[&#39;usa_wiretap-orders_total&#39;];
@@ -32,10 +32,9 @@ echo $_SESSION[&#39;usa_other-orders_total&#39;];
 echo $_SESSION[&#39;usa_criminal-subpoenas_total&#39;];
 echo $_SESSION[&#39;usa_civil-subpoenas_total&#39;];
 echo $_SESSION[&#39;usa_emergency-requests_total&#39;];
-?&gt;</p>
-<div class="progress-bar">
+?&gt;<div class="progress-bar">
   <span style="width:%"></span>
-</div>
+</div></p>
 <div class="progress-buttons">
   <a href="submit-report-12.php" class="progression ">&lt; Back</a>
   <input type="submit" class="progression" name="save-section-13" value=" Submit " id="save-section-13"></input>

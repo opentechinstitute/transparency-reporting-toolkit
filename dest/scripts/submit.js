@@ -25,6 +25,7 @@ function calculator(section, maxNo) {
 var forms = document.forms;
 // get the name of the main form
 var thisForm = forms[0].name;
+// TODO: this is terrible, clean it up
 switch (thisForm) {
   case "submitSection0":
     calculator('request-types', 8);

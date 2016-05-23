@@ -28,6 +28,7 @@ $newRecord = new stdClass();
 
 for ($i = 0; $i < $maxNo-1; $i++) {
   // set up fields
+  // TODO: set these up separately once, instead of every time
   ${'field'.$i} = new stdClass();
   ${'field'.$i}->id = $titles[$i];
   if ($i == 0 || $i == 1) {
@@ -56,6 +57,8 @@ curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data_as_json);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_FRESH_CONNECT, true);
+// temporary workaround while Nat works on the cert verification
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 $results = curl_exec($ch);
 curl_close($ch);
 echo $results;
