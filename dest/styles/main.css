@@ -166,6 +166,9 @@ a {
     height: 0;
     width: 0; }
 
+.submitting-user {
+  visibility: hidden; }
+
 .time-selection {
   margin: 1.5em 0; }
   .time-selection p {

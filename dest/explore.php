@@ -100,6 +100,7 @@
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
     <form action="submit-report-0.php" method="post">
       <input type="text" name="company" id="copyCompany" placeholder="Company name"/>
+      <input type="text" name="userID" id="submitting-user"/>
       <input type="submit" name="company-submit" value="Got it!" id="to-form"></input>
     </form>
   </div>

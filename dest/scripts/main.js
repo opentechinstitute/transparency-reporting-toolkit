@@ -80,10 +80,13 @@ function include(arr,obj) {
     return (arr.indexOf(obj) != -1);
 }
 
+// input to link user to submitted data
+var userInput = document.getElementById("submitting-user");
 
 document.getElementById("to-form").addEventListener("click", function( event ) {
   var isApproved = include(approved, user);
   if (isApproved) {
+    userInput.value = user;
     currentLoc = window.location;
     setTimeout(function () {
       window.location = currentLoc.origin+"/submit-report-0.php";
