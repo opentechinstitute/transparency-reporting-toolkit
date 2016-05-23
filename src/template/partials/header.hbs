@@ -1,8 +1,13 @@
 <?php
+  {{#if start}}
+    session_unset();
+  {{/if}}
+
   session_start();
+
   {{#if index}}
     include 'scripts/submit-{{subtract index 1}}.php';
-  {{/if}}  
+  {{/if}}
 ?>
 <html>
 <head>

@@ -1,5 +1,7 @@
 <?php
+
   session_start();
+
     include 'scripts/submit-2.php';
 ?>
 <html>
