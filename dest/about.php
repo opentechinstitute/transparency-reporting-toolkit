@@ -21,6 +21,7 @@
       </ul>
     </div>
   </div>  <div class="main-content container">
+<p><h2>The Team</h2><p>Vel error consequuntur ut. Quia fuga tempore sunt labore eaque ab et fugit. Dolorum non animi cupiditate voluptatem dolore eligendi possimus et. Autem id velit dolore omnis. Voluptatem quia quo autem non omnis.</p><h3>Open Technology Institute</h3><p>Qui cumque eos similique. Iste et molestiae quis excepturi. Qui commodi illo labore ut voluptas sed. Vitae quisquam atque ut dolorem quia dolores. Dignissimos et eum consequatur ut autem dolore magnam. Qui quas tempore ea quod beatae voluptatem nesciunt. Doloremque vero distinctio quisquam rerum suscipit dolores. Minima quaerat iure iste. Dicta nihil deserunt sit ut odio quaerat.</p><h3>Berkman Center</h3><p>Enim sint debitis quibusdam quasi. Aut molestiae soluta vel. Magnam autem ipsam voluptatem impedit molestiae facere ipsum. In adipisci quia facere impedit vitae hic ipsum tempore. Enim cum est maiores quis placeat dicta doloremque dolore. Mollitia quae facere perferendis eum illo quaerat autem repellendus. Voluptatem dolore aut fuga excepturi ex in. Aut reiciendis et eius qui quibusdam fuga. Sit aut earum eum soluta odio vero explicabo mollitia.</p></p>
   </div>
   <div class="overlay">
     <p></p>
@@ -44,7 +45,7 @@
       </ul>
     </div>
     <script src='scripts/main.js'></script>
-    <script src='scripts/.js'></script>
+    <script src='scripts/about.js'></script>
   </footer>
 </body>
 </html>
