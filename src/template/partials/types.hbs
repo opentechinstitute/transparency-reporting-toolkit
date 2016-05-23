@@ -33,36 +33,36 @@
         {{#if isUSA}}
         <form action="submit-report-1.php" method="post">
           <td>
-            <input type="text" name="search-warrants"></input>
+            <input type="text" required name="search-warrants"></input>
           </td>
           <td>
-            <input type="text" name="wiretap-orders"></input>
+            <input type="text" required name="wiretap-orders"></input>
           </td>
           <td>
-            <input type="text" name="pen-register-orders"></input>
+            <input type="text" required name="pen-register-orders"></input>
           </td>
           <td>
-            <input type="text" name="other-court-orders"></input>
+            <input type="text" required name="other-court-orders"></input>
           </td>
           <td>
-            <input type="text" name="criminal-subpoenas"></input>
+            <input type="text" required name="criminal-subpoenas"></input>
           </td>
           <td>
-            <input type="text" name="civil-subpoenas"></input>
+            <input type="text" required name="civil-subpoenas"></input>
           </td>
           <td>
-            <input type="text" name="emergency-requests"></input>
+            <input type="text" required name="emergency-requests"></input>
           </td>
         {{else}}
           <td>
-            <input type="text" name="retrospective"></input>
+            <input type="text" required name="retrospective"></input>
           </td>
           <td>
-            <input type="text" name="prospective"></input>
+            <input type="text" required name="prospective"></input>
           </td>
         {{/if}}
           <td>
-            <input type="text" name="{{prefix}}-total" disabled="true" value=0></input>
+            <input type="text" required name="{{prefix}}-total" disabled="true"></input>
           </td>
       </tr>
     </tbody>
@@ -73,7 +73,7 @@
       <tbody>
         <td>Total # of selectors specified by all of the above requests</td>
         <td>
-          <input type="text" name="{{prefix}}-selectors-specified"></input>
+          <input type="text" required name="{{prefix}}-selectors-specified"></input>
         </td>
       </tbody>
     </table>
@@ -81,7 +81,7 @@
       <tbody>
         <td>Total # of accounts responsive to all of the above requests</td>
         <td>
-          <input type="text" name="{{prefix}}-accounts-responsive"></input>
+          <input type="text" required name="{{prefix}}-accounts-responsive"></input>
         </td>
       </tbody>
     </table>

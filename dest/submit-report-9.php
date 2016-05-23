@@ -47,16 +47,16 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         # Received
       </td>
       <td>
-        <input type="text" name="notifications-sealed"></input>
+        <input type="text" required name="notifications-sealed"></input>
       </td>
       <td>
-        <input type="text" name="notifications-not-sealed-notice"></input>
+        <input type="text" required name="notifications-not-sealed-notice"></input>
       </td>
       <td>
-        <input type="text" name="notifications-not-sealed-no-notice"></input>
+        <input type="text" required name="notifications-not-sealed-no-notice"></input>
       </td>
       <td>
-        <input type="text" name="notifications-total" disabled="true" value=0></input>
+        <input type="text" required name="notifications-total" disabled="true"></input>
       </td>
     </tr>
     <tr class="disabled">

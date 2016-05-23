@@ -63,28 +63,28 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         </td>
         <form action="submit-report-1.php" method="post">
           <td>
-            <input type="text" name="search-warrants"></input>
+            <input type="text" required name="search-warrants"></input>
           </td>
           <td>
-            <input type="text" name="wiretap-orders"></input>
+            <input type="text" required name="wiretap-orders"></input>
           </td>
           <td>
-            <input type="text" name="pen-register-orders"></input>
+            <input type="text" required name="pen-register-orders"></input>
           </td>
           <td>
-            <input type="text" name="other-court-orders"></input>
+            <input type="text" required name="other-court-orders"></input>
           </td>
           <td>
-            <input type="text" name="criminal-subpoenas"></input>
+            <input type="text" required name="criminal-subpoenas"></input>
           </td>
           <td>
-            <input type="text" name="civil-subpoenas"></input>
+            <input type="text" required name="civil-subpoenas"></input>
           </td>
           <td>
-            <input type="text" name="emergency-requests"></input>
+            <input type="text" required name="emergency-requests"></input>
           </td>
           <td>
-            <input type="text" name="usa-types-total" disabled="true" value=0></input>
+            <input type="text" required name="usa-types-total" disabled="true"></input>
           </td>
       </tr>
     </tbody>
@@ -95,7 +95,7 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
       <tbody>
         <td>Total # of selectors specified by all of the above requests</td>
         <td>
-          <input type="text" name="usa-types-selectors-specified"></input>
+          <input type="text" required name="usa-types-selectors-specified"></input>
         </td>
       </tbody>
     </table>
@@ -103,7 +103,7 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
       <tbody>
         <td>Total # of accounts responsive to all of the above requests</td>
         <td>
-          <input type="text" name="usa-types-accounts-responsive"></input>
+          <input type="text" required name="usa-types-accounts-responsive"></input>
         </td>
       </tbody>
     </table>

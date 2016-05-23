@@ -61,7 +61,7 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         <input type="text" name="other-non-content-disclosed" ></input>
       </td>
       <td>
-        <input type="text" name="other-total" disabled="true" value=0></input>
+        <input type="text" name="other-total" disabled="true"></input>
       </td>
     </tr>
     <tr class="disabled">

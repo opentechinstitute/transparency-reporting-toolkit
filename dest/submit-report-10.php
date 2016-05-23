@@ -46,13 +46,13 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
           # Received
         </td>
           <td>
-            <input type="text" name="retrospective"></input>
+            <input type="text" required name="retrospective"></input>
           </td>
           <td>
-            <input type="text" name="prospective"></input>
+            <input type="text" required name="prospective"></input>
           </td>
           <td>
-            <input type="text" name="non-usa-types-total" disabled="true" value=0></input>
+            <input type="text" required name="non-usa-types-total" disabled="true"></input>
           </td>
       </tr>
     </tbody>
@@ -63,7 +63,7 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
       <tbody>
         <td>Total # of selectors specified by all of the above requests</td>
         <td>
-          <input type="text" name="non-usa-types-selectors-specified"></input>
+          <input type="text" required name="non-usa-types-selectors-specified"></input>
         </td>
       </tbody>
     </table>
@@ -71,7 +71,7 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
       <tbody>
         <td>Total # of accounts responsive to all of the above requests</td>
         <td>
-          <input type="text" name="non-usa-types-accounts-responsive"></input>
+          <input type="text" required name="non-usa-types-accounts-responsive"></input>
         </td>
       </tbody>
     </table>
