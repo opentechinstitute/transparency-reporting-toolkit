@@ -22,15 +22,21 @@ $titles = array("company_name", "data_submitted_by_authorised_user", "usa_search
 $fields = array();
 $records = array();
 
+$maxNo = count($titles);
 
-for ($i = 0; $i < count($titles-1); $i++) {
-  $field.$i = new stdClass();
-  $field.$i->id = $titles[$i];
-  $fields[] = $field.$i;
+for ($i = 0; $i < $maxNo-1; $i++) {
+  ${'field'.$i} = new stdClass();
+  ${'field'.$i}->id = $titles[$i];
+  if ($i == 0 || $i == 1) {
+    ${'field'.$i}->type = 'text';
+  } else {
+    ${'field'.$i}->type = 'int';
+  }
+  $fields[] = ${'field'.$i};
 
-  $record.$i = new stdClass();
-  $record.$i->$titles[$i] = $_SESSION[$titles[$i]];
-  $records[] = $record.$i;
+  ${'record'.$i} = new stdClass();
+  ${'record'.$i}->$titles[$i] = $_SESSION[$titles[$i]];
+  $records[] = ${'record'.$i};
 }
 
 $data->fields = $fields;
