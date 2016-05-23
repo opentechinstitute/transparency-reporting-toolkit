@@ -49,16 +49,16 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         # Received
       </td>
       <td>
-        <input type="text" name="wiretap-rejected" ></input>
+        <input type="text" name="wiretap-rejected" required></input>
       </td>
       <td>
-        <input type="text" name="wiretap-no-data" ></input>
+        <input type="text" name="wiretap-no-data" required></input>
       </td>
       <td>
-        <input type="text" name="wiretap-content-disclosed" ></input>
+        <input type="text" name="wiretap-content-disclosed" required></input>
       </td>
       <td>
-        <input type="text" name="wiretap-non-content-disclosed" ></input>
+        <input type="text" name="wiretap-non-content-disclosed" required></input>
       </td>
       <td>
         <input type="text" name="wiretap-total" disabled="true"></input>

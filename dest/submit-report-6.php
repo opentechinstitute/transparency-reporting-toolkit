@@ -49,16 +49,16 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         # Received
       </td>
       <td>
-        <input type="text" name="civil-rejected" ></input>
+        <input type="text" name="civil-rejected" required></input>
       </td>
       <td>
-        <input type="text" name="civil-no-data" ></input>
+        <input type="text" name="civil-no-data" required></input>
       </td>
       <td>
-        <input type="text" name="civil-content-disclosed" ></input>
+        <input type="text" name="civil-content-disclosed" required></input>
       </td>
       <td>
-        <input type="text" name="civil-non-content-disclosed" ></input>
+        <input type="text" name="civil-non-content-disclosed" required></input>
       </td>
       <td>
         <input type="text" name="civil-total" disabled="true"></input>

@@ -49,16 +49,16 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         # Received
       </td>
       <td>
-        <input type="text" name="search-rejected" ></input>
+        <input type="text" name="search-rejected" required></input>
       </td>
       <td>
-        <input type="text" name="search-no-data" ></input>
+        <input type="text" name="search-no-data" required></input>
       </td>
       <td>
-        <input type="text" name="search-content-disclosed" ></input>
+        <input type="text" name="search-content-disclosed" required></input>
       </td>
       <td>
-        <input type="text" name="search-non-content-disclosed" ></input>
+        <input type="text" name="search-non-content-disclosed" required></input>
       </td>
       <td>
         <input type="text" name="search-total" disabled="true"></input>

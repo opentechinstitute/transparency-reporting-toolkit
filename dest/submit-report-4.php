@@ -49,16 +49,16 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         # Received
       </td>
       <td>
-        <input type="text" name="other-rejected" ></input>
+        <input type="text" name="other-rejected" required></input>
       </td>
       <td>
-        <input type="text" name="other-no-data" ></input>
+        <input type="text" name="other-no-data" required></input>
       </td>
       <td>
-        <input type="text" name="other-content-disclosed" ></input>
+        <input type="text" name="other-content-disclosed" required></input>
       </td>
       <td>
-        <input type="text" name="other-non-content-disclosed" ></input>
+        <input type="text" name="other-non-content-disclosed" required></input>
       </td>
       <td>
         <input type="text" name="other-total" disabled="true"></input>

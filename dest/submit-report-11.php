@@ -48,16 +48,16 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         # Received
       </td>
       <td>
-        <input type="text" name="non-usa-outcomes-rejected" ></input>
+        <input type="text" name="non-usa-outcomes-rejected" required></input>
       </td>
       <td>
-        <input type="text" name="non-usa-outcomes-no-data" ></input>
+        <input type="text" name="non-usa-outcomes-no-data" required></input>
       </td>
       <td>
-        <input type="text" name="non-usa-outcomes-content-disclosed" ></input>
+        <input type="text" name="non-usa-outcomes-content-disclosed" required></input>
       </td>
       <td>
-        <input type="text" name="non-usa-outcomes-non-content-disclosed" ></input>
+        <input type="text" name="non-usa-outcomes-non-content-disclosed" required></input>
       </td>
       <td>
         <input type="text" name="non-usa-outcomes-total" disabled="true"></input>
