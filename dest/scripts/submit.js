@@ -6,19 +6,29 @@ function calculator(section, maxNo) {
   // get total input box from that list of inputs
   totalInput = allInputs[maxNo-1];
   // initialise the total to 0
-  total = 0;
+  total = parseInt(0);
   // set the value of the
   totalInput.value = 0;
-  // filter down to only required ones
-  // if (this.value != "") {
-  //   for (var i=0; i<maxNo;i++){
-  //     allInputs[i].oninput = function() {
-  //       total = parseFloat(this.value+total);
-  //       console.log(total);
-  //       totalInput.value = total;
-  //     }
-  //   }
-  // }
+  // for each input
+  for (var i=0; i<maxNo-1;i++){
+    // when a value is entered
+    allInputs[i].oninput = function() {
+      // recalculate the total
+      totalInput.value = getTotal(maxNo, allInputs);
+    }
+  }
+}
+
+function getTotal(maxNo, allInputs) {
+  currentTotal = 0;
+  // for each input
+  for (var i=0;i<maxNo-1;i++) {
+    if (allInputs[i].value != "") {
+      // add each input's value together
+      currentTotal += parseInt(allInputs[i].value);
+    }
+  }
+  return currentTotal;
 }
 
 // what page are we on?
