@@ -1,5 +1,4 @@
 <?php
-
   session_start();
 
     include 'scripts/submit-14.php';

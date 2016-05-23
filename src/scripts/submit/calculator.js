@@ -1,3 +1,4 @@
+var percAC = true;
 function calculator(section, maxNo) {
   // get section containing the input boxes
   el = document.getElementsByClassName(section);
@@ -14,7 +15,18 @@ function calculator(section, maxNo) {
     // when a value is entered
     allInputs[i].oninput = function() {
       // recalculate the total
-      totalInput.value = getTotal(maxNo, allInputs);
+      newTotal = getTotal(maxNo, allInputs)
+      totalInput.value = newTotal;
+      // if percentages are involved
+      if (percAC) {
+        // grab the boxes
+        percBoxes = [];
+        // for each percentage box
+        for (var j=maxNo;j<(maxNo*2)-1;j++) {
+          newPerc = (parseInt(allInputs[i].value)/newTotal)*100;
+          allInputs[j].value = newPerc;
+        }
+      }
     }
   }
 }
@@ -39,6 +51,7 @@ var thisForm = forms[0].name;
 switch (thisForm) {
   case "submitSection0":
     calculator('request-types', 8);
+    percAC = false;
     break;
   case "submitSection1":
     calculator('outcomes', 5);
@@ -61,14 +74,12 @@ switch (thisForm) {
   case "submitSection7":
     calculator('outcomes', 5);
     break;
-  case "submitSection8":
-    calculator('outcomes', 5);
-    break;
   case "submitSection9":
     calculator('notifications', 4);
     break;
   case "submitSection10":
     calculator('request-types', 3);
+    percAC = false;
     break;
   case "submitSection11":
     calculator('outcomes', 5);

@@ -1,5 +1,4 @@
 <?php
-
   session_start();
 
     include 'scripts/submit-6.php';
@@ -83,7 +82,7 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         <input type="text" disabled="true" name="civil-pc-non-content-disclosed"></input>
       </td>
       <td>
-        <input type="text" name="civil-pc-total" disabled="true" value=100%></input>
+        <input type="text" name="civil-pc-total" disabled="true" value=100></input>
       </td>
     </tr>
 

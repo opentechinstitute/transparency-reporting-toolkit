@@ -1,5 +1,4 @@
 <?php
-
   session_start();
 
     include 'scripts/submit-9.php';
@@ -75,7 +74,7 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         <input type="text" disabled="true" name="notifications-pc-not-sealed-no-notice"></input>
       </td>
       <td>
-        <input type="text" name="notifications-pc-total" disabled="true" value=100%></input>
+        <input type="text" name="notifications-pc-total" disabled="true" value=100></input>
       </td>
     </tr>
 
