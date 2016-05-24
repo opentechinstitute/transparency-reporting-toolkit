@@ -34,7 +34,7 @@ for ($i = 0; $i < $maxNo-1; $i++) {
   if ($i == 0 || $i == 1) {
     ${'field'.$i}->type = 'text';
   } else {
-    ${'field'.$i}->type = 'int';
+    ${'field'.$i}->type = 'float';
   }
   $fields[] = ${'field'.$i};
 
