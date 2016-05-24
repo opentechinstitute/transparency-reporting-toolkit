@@ -62,7 +62,7 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         <input type="text" name="criminal-non-content-disclosed" required></input>
       </td>
       <td>
-        <input type="text" name="criminal-total" disabled="true"></input>
+        <input type="text" name="criminal-total" readonly="readonly" class="disabled"></input>
       </td>
     </tr>
     <tr class="disabled">
@@ -70,19 +70,19 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         % of total
       </td>
       <td>
-        <input type="text" disabled="true" name="criminal-pc-rejected"></input>
+        <input type="text" readonly="readonly" name="criminal-pc-rejected"></input>
       </td>
       <td>
-        <input type="text" disabled="true" name="criminal-pc-no-data"></input>
+        <input type="text" readonly="readonly" name="criminal-pc-no-data"></input>
       </td>
       <td>
-        <input type="text" disabled="true" name="criminal-pc-content-disclosed"></input>
+        <input type="text" readonly="readonly" name="criminal-pc-content-disclosed"></input>
       </td>
       <td>
-        <input type="text" disabled="true" name="criminal-pc-non-content-disclosed"></input>
+        <input type="text" readonly="readonly" name="criminal-pc-non-content-disclosed"></input>
       </td>
       <td>
-        <input type="text" name="criminal-pc-total" disabled="true" value=100></input>
+        <input type="text" name="criminal-pc-total" readonly="readonly" value=100></input>
       </td>
     </tr>
 

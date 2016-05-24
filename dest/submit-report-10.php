@@ -53,7 +53,7 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
             <input type="text" required name="prospective"></input>
           </td>
           <td>
-            <input type="text" required name="non-usa-types-total" disabled="true"></input>
+            <input type="text" required name="non-usa-types-total" readonly="readonly" class="disabled"></input>
           </td>
       </tr>
     </tbody>

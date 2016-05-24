@@ -102,27 +102,27 @@ switch (thisForm) {
 // };
 // oReq.open("GET", "scripts/submit-0.php");
 // oReq.send();
-// document.submitSection0.submit();
-
-var submitButton;
-
+// // document.submitSection0.submit();
+//
+// var submitButton;
+//
 function isInPage(node) {
   return (node === document.body) ? false : document.body.contains(node);
 }
-
-// find out what page we're on
-for (var i=0;i<=12;i++) {
-  if (isInPage(document.getElementById('submitSectionButton'+i))) {
-    submitButton = document.getElementById('submitSectionButton'+i);
-    clickTrigger(submitButton);
-  }
-}
-
-function clickTrigger(el) {
-  el.addEventListener("click", function(event) {
-    document.submitButton.submit();
-  }, false);
-}
+//
+// // find out what page we're on
+// for (var i=0;i<=12;i++) {
+//   if (isInPage(document.getElementById('submitSectionButton'+i))) {
+//     submitButton = document.getElementById('submitSectionButton'+i);
+//     clickTrigger(submitButton);
+//   }
+// }
+//
+// function clickTrigger(el) {
+//   el.addEventListener("click", function(event) {
+//     document.submitButton.submit();
+//   }, false);
+// }
 if (isInPage(document.getElementsByName('submitSection0'))) {
   var months = document.getElementsByClassName('months');
   months = months[0].getElementsByTagName('span');

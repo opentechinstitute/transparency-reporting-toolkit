@@ -85,7 +85,7 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
             <input type="text" required name="emergency-requests"></input>
           </td>
           <td>
-            <input type="text" required name="usa-types-total" disabled="true"></input>
+            <input type="text" required name="usa-types-total" readonly="readonly" class="disabled"></input>
           </td>
       </tr>
     </tbody>

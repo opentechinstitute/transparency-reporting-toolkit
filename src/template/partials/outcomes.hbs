@@ -16,19 +16,19 @@
         # Received
       </td>
       <td>
-        <input type="text" name="{{prefix}}-rejected" {{#if review}}disabled="true"{{else}}required{{/if}}></input>
+        <input type="text" name="{{prefix}}-rejected" {{#if review}}readonly="readonly"{{else}}required{{/if}}></input>
       </td>
       <td>
-        <input type="text" name="{{prefix}}-no-data" {{#if review}}disabled="true"{{else}}required{{/if}}></input>
+        <input type="text" name="{{prefix}}-no-data" {{#if review}}readonly="readonly"{{else}}required{{/if}}></input>
       </td>
       <td>
-        <input type="text" name="{{prefix}}-content-disclosed" {{#if review}}disabled="true"{{else}}required{{/if}}></input>
+        <input type="text" name="{{prefix}}-content-disclosed" {{#if review}}readonly="readonly"{{else}}required{{/if}}></input>
       </td>
       <td>
-        <input type="text" name="{{prefix}}-non-content-disclosed" {{#if review}}disabled="true"{{else}}required{{/if}}></input>
+        <input type="text" name="{{prefix}}-non-content-disclosed" {{#if review}}readonly="readonly"{{else}}required{{/if}}></input>
       </td>
       <td>
-        <input type="text" name="{{prefix}}-total" disabled="true"></input>
+        <input type="text" name="{{prefix}}-total" readonly="readonly" class="disabled"></input>
       </td>
     </tr>
     <tr class="disabled">
@@ -36,19 +36,19 @@
         % of total
       </td>
       <td>
-        <input type="text" disabled="true" name="{{prefix}}-pc-rejected"></input>
+        <input type="text" readonly="readonly" name="{{prefix}}-pc-rejected"></input>
       </td>
       <td>
-        <input type="text" disabled="true" name="{{prefix}}-pc-no-data"></input>
+        <input type="text" readonly="readonly" name="{{prefix}}-pc-no-data"></input>
       </td>
       <td>
-        <input type="text" disabled="true" name="{{prefix}}-pc-content-disclosed"></input>
+        <input type="text" readonly="readonly" name="{{prefix}}-pc-content-disclosed"></input>
       </td>
       <td>
-        <input type="text" disabled="true" name="{{prefix}}-pc-non-content-disclosed"></input>
+        <input type="text" readonly="readonly" name="{{prefix}}-pc-non-content-disclosed"></input>
       </td>
       <td>
-        <input type="text" name="{{prefix}}-pc-total" disabled="true" value=100></input>
+        <input type="text" name="{{prefix}}-pc-total" readonly="readonly" value=100></input>
       </td>
     </tr>
 

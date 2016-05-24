@@ -62,7 +62,7 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         <input type="text" name="wiretap-non-content-disclosed" required></input>
       </td>
       <td>
-        <input type="text" name="wiretap-total" disabled="true"></input>
+        <input type="text" name="wiretap-total" readonly="readonly" class="disabled"></input>
       </td>
     </tr>
     <tr class="disabled">
@@ -70,19 +70,19 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         % of total
       </td>
       <td>
-        <input type="text" disabled="true" name="wiretap-pc-rejected"></input>
+        <input type="text" readonly="readonly" name="wiretap-pc-rejected"></input>
       </td>
       <td>
-        <input type="text" disabled="true" name="wiretap-pc-no-data"></input>
+        <input type="text" readonly="readonly" name="wiretap-pc-no-data"></input>
       </td>
       <td>
-        <input type="text" disabled="true" name="wiretap-pc-content-disclosed"></input>
+        <input type="text" readonly="readonly" name="wiretap-pc-content-disclosed"></input>
       </td>
       <td>
-        <input type="text" disabled="true" name="wiretap-pc-non-content-disclosed"></input>
+        <input type="text" readonly="readonly" name="wiretap-pc-non-content-disclosed"></input>
       </td>
       <td>
-        <input type="text" name="wiretap-pc-total" disabled="true" value=100></input>
+        <input type="text" name="wiretap-pc-total" readonly="readonly" value=100></input>
       </td>
     </tr>
 

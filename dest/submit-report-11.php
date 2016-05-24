@@ -61,7 +61,7 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         <input type="text" name="non-usa-outcomes-non-content-disclosed" required></input>
       </td>
       <td>
-        <input type="text" name="non-usa-outcomes-total" disabled="true"></input>
+        <input type="text" name="non-usa-outcomes-total" readonly="readonly" class="disabled"></input>
       </td>
     </tr>
     <tr class="disabled">
@@ -69,19 +69,19 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         % of total
       </td>
       <td>
-        <input type="text" disabled="true" name="non-usa-outcomes-pc-rejected"></input>
+        <input type="text" readonly="readonly" name="non-usa-outcomes-pc-rejected"></input>
       </td>
       <td>
-        <input type="text" disabled="true" name="non-usa-outcomes-pc-no-data"></input>
+        <input type="text" readonly="readonly" name="non-usa-outcomes-pc-no-data"></input>
       </td>
       <td>
-        <input type="text" disabled="true" name="non-usa-outcomes-pc-content-disclosed"></input>
+        <input type="text" readonly="readonly" name="non-usa-outcomes-pc-content-disclosed"></input>
       </td>
       <td>
-        <input type="text" disabled="true" name="non-usa-outcomes-pc-non-content-disclosed"></input>
+        <input type="text" readonly="readonly" name="non-usa-outcomes-pc-non-content-disclosed"></input>
       </td>
       <td>
-        <input type="text" name="non-usa-outcomes-pc-total" disabled="true" value=100></input>
+        <input type="text" name="non-usa-outcomes-pc-total" readonly="readonly" value=100></input>
       </td>
     </tr>
 

@@ -57,7 +57,7 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         <input type="text" required name="notifications-not-sealed-no-notice"></input>
       </td>
       <td>
-        <input type="text" required name="notifications-total" disabled="true"></input>
+        <input type="text" required name="notifications-total" readonly="readonly" class="disabled"></input>
       </td>
     </tr>
     <tr class="disabled">
@@ -65,16 +65,16 @@ perferita, ute rei serente dint? Ebatus aves es hoc restrum duconequit.</p>
         % of total
       </td>
       <td>
-        <input type="text" disabled="true" name="notifications-pc-sealed"></input>
+        <input type="text" readonly="readonly" name="notifications-pc-sealed"></input>
       </td>
       <td>
-        <input type="text" disabled="true" name="notifications-pc-not-sealed-notice"></input>
+        <input type="text" readonly="readonly" name="notifications-pc-not-sealed-notice"></input>
       </td>
       <td>
-        <input type="text" disabled="true" name="notifications-pc-not-sealed-no-notice"></input>
+        <input type="text" readonly="readonly" name="notifications-pc-not-sealed-no-notice"></input>
       </td>
       <td>
-        <input type="text" name="notifications-pc-total" disabled="true" value=100></input>
+        <input type="text" name="notifications-pc-total" readonly="readonly" value=100></input>
       </td>
     </tr>
 
