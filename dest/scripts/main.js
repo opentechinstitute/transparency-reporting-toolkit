@@ -75,7 +75,7 @@ function onSignIn(googleUser) {
   user = profile.getEmail();
 }
 // TODO: hook this up to Directory API to check against group member list
-var approved = ['gembarrett1986@gmail.com', 'lizwoolery@opentechinstitute.org'];
+var approved = ['gembarrett1986@gmail.com'];
 function include(arr,obj) {
     return (arr.indexOf(obj) != -1);
 }
