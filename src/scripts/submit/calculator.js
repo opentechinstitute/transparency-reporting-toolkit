@@ -29,14 +29,20 @@ function getTotal(maxNo, allInputs) {
       // add each input's value together
       currentTotal += parseInt(allInputs[i].value);
       if (percAC) {
-        p = i+maxNo;
-        console.log(p);
-        currentPerc = (allInputs[i].value/currentTotal)*100;
-        allInputs[p].value = currentPerc;
+        getPercs(maxNo, allInputs);
       }
     }
   }
   return currentTotal;
+}
+
+function getPercs(maxNo, allInputs) {
+  currentPerc = 0;
+  for (var j=0; j<maxNo-1; j++) {
+    p = j+maxNo;
+    currentPerc = (allInputs[j].value/currentTotal)*100;
+    allInputs[p].value = currentPerc;
+  }
 }
 
 // what page are we on?
