@@ -8,25 +8,15 @@ function calculator(section, maxNo) {
   totalInput = allInputs[maxNo-1];
   // initialise the total to 0
   total = parseInt(0);
-  // set the value of the
+  // set the value of the total
   totalInput.value = 0;
   // for each input
   for (var i=0; i<maxNo-1;i++){
     // when a value is entered
     allInputs[i].oninput = function() {
       // recalculate the total
-      newTotal = getTotal(maxNo, allInputs)
+      newTotal = getTotal(maxNo, allInputs);
       totalInput.value = newTotal;
-      // if percentages are involved
-      if (percAC) {
-        // grab the boxes
-        percBoxes = [];
-        // for each percentage box
-        for (var j=maxNo;j<(maxNo*2)-1;j++) {
-          newPerc = (parseInt(allInputs[i].value)/newTotal)*100;
-          allInputs[j].value = newPerc;
-        }
-      }
     }
   }
 }
@@ -38,6 +28,12 @@ function getTotal(maxNo, allInputs) {
     if (allInputs[i].value != "") {
       // add each input's value together
       currentTotal += parseInt(allInputs[i].value);
+      if (percAC) {
+        p = i+maxNo;
+        console.log(p);
+        currentPerc = (allInputs[i].value/currentTotal)*100;
+        allInputs[p].value = currentPerc;
+      }
     }
   }
   return currentTotal;
@@ -112,25 +108,26 @@ function isInPage(node) {
 for (var i=0;i<=12;i++) {
   if (isInPage(document.getElementById('submitSectionButton'+i))) {
     submitButton = document.getElementById('submitSectionButton'+i);
+    clickTrigger(submitButton);
   }
 }
-
-clickTrigger(submitButton);
 
 function clickTrigger(el) {
   el.addEventListener("click", function(event) {
     document.submitButton.submit();
   }, false);
 }
-var months = document.getElementsByClassName('months');
-months = months[0].getElementsByTagName('span');
-months = [].slice.call(months);
-var years = document.getElementsByClassName('years');
-years = years[0].getElementsByTagName('span');
-years = [].slice.call(years);
-addListeners(months);
-addListeners(years);
-var selection;
+if (isInPage(document.getElementsByName('submitSection0'))) {
+  var months = document.getElementsByClassName('months');
+  months = months[0].getElementsByTagName('span');
+  months = [].slice.call(months);
+  var years = document.getElementsByClassName('years');
+  years = years[0].getElementsByTagName('span');
+  years = [].slice.call(years);
+  addListeners(months);
+  addListeners(years);
+  var selection;  
+}
 
 function addListeners(period) {
   for (var i=0; i<period.length; i++) {

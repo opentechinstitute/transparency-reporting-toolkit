@@ -10,10 +10,9 @@ function isInPage(node) {
 for (var i=0;i<=12;i++) {
   if (isInPage(document.getElementById('submitSectionButton'+i))) {
     submitButton = document.getElementById('submitSectionButton'+i);
+    clickTrigger(submitButton);
   }
 }
-
-clickTrigger(submitButton);
 
 function clickTrigger(el) {
   el.addEventListener("click", function(event) {

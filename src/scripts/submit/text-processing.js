@@ -1,12 +1,14 @@
-var months = document.getElementsByClassName('months');
-months = months[0].getElementsByTagName('span');
-months = [].slice.call(months);
-var years = document.getElementsByClassName('years');
-years = years[0].getElementsByTagName('span');
-years = [].slice.call(years);
-addListeners(months);
-addListeners(years);
-var selection;
+if (isInPage(document.getElementsByName('submitSection0'))) {
+  var months = document.getElementsByClassName('months');
+  months = months[0].getElementsByTagName('span');
+  months = [].slice.call(months);
+  var years = document.getElementsByClassName('years');
+  years = years[0].getElementsByTagName('span');
+  years = [].slice.call(years);
+  addListeners(months);
+  addListeners(years);
+  var selection;  
+}
 
 function addListeners(period) {
   for (var i=0; i<period.length; i++) {
