@@ -75,7 +75,7 @@ function onSignIn(googleUser) {
   user = profile.getEmail();
 }
 // TODO: hook this up to Directory API to check against group member list
-var approved = ['gembarrett1986@gmail.com', 'lizwoolery@opentechinstitute.org'];
+var approved = ['gembarrett1986@gmail.com'];
 function include(arr,obj) {
     return (arr.indexOf(obj) != -1);
 }
@@ -92,7 +92,7 @@ document.getElementById("to-form").addEventListener("click", function( event ) {
       window.location = currentLoc.origin+"/submit-report-0.php";
     }, 1000);
   } else {
-    alert("Sorry, your account hasn't been approved for data upload.");
+    alert("Sorry, your account hasn't been approved for data upload. Please <a href='mailto:addme@opentechinstitute.org'>contact us</a> to be approved");
     event.preventDefault();
   }
 }, false);
