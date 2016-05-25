@@ -1,6 +1,6 @@
 <?php
   session_start();
-
+    include 'scripts/gatekeeper.php';
     include 'scripts/submit-3.php';
 ?>
 <html>

@@ -1,6 +1,11 @@
 <?php
   session_start();
-
+  {{#if first}}
+    include 'scripts/submit-0.php';
+  {{/if}}
+  {{#if needsAuth}}
+    include 'scripts/gatekeeper.php';
+  {{/if}}
   {{#if index}}
     include 'scripts/submit-{{subtract index 1}}.php';
   {{/if}}
