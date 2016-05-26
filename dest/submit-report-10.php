@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="./styles/main.css" />
   <script src='https://apis.google.com/js/platform.js' async defer></script>
   <meta name="google-signin-client_id" content="866567614664-plajrfu1bkmapbop03i30nh9vdmmdqe3.apps.googleusercontent.com">
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
 </head>
 <body>  <div class="nav-background">
     <div class="container nav">

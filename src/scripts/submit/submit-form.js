@@ -2,9 +2,9 @@
 //
 // var submitButton;
 //
-function isInPage(node) {
-  return (node === document.body) ? false : document.body.contains(node);
-}
+// function isInPage(node) {
+//   return document.body.contains(node);
+// }
 //
 // // find out what page we're on
 // for (var i=0;i<=12;i++) {

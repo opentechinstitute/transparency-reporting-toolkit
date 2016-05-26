@@ -106,9 +106,9 @@ switch (thisForm) {
 //
 // var submitButton;
 //
-function isInPage(node) {
-  return (node === document.body) ? false : document.body.contains(node);
-}
+// function isInPage(node) {
+//   return document.body.contains(node);
+// }
 //
 // // find out what page we're on
 // for (var i=0;i<=12;i++) {
@@ -123,7 +123,7 @@ function isInPage(node) {
 //     document.submitButton.submit();
 //   }, false);
 // }
-if (isInPage(document.getElementsByName('submitSection0'))) {
+if (formProcess() == 0) {
   var months = document.getElementsByClassName('months');
   months = months[0].getElementsByTagName('span');
   months = [].slice.call(months);
@@ -132,7 +132,6 @@ if (isInPage(document.getElementsByName('submitSection0'))) {
   years = [].slice.call(years);
   addListeners(months);
   addListeners(years);
-  var selection;  
 }
 
 function addListeners(period) {
@@ -145,13 +144,16 @@ function addListeners(period) {
         else {
           period[j].classList.remove('selected');
         }
-        // else if (j.classList.contains('selected')) {
-        //   j.classList.remove('selected');
-        //   console.log(j);
-        // } else {
-        //   console.log(j);
-        // }
       }
+      console.log(this);
     }, false);
   }
+}
+
+function formProcess() {
+  // what page are we on?
+  var forms = document.forms;
+  // get the name of the main form
+  var thisForm = forms[0].name;
+  return thisForm.match(/.$/);
 }
