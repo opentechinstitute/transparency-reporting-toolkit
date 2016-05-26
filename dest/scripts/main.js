@@ -70,22 +70,24 @@ submitProcess[0].addEventListener("click", function( event ) {
 
 // sign-in and authentication
 var user;
+// TODO: hook this up to Directory API to check against group member list
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   user = profile.getEmail();
-}
-// TODO: hook this up to Directory API to check against group member list
-var approved = ['gembarrett1986@gmail.com'];
-function include(arr,obj) {
-    return (arr.indexOf(obj) != -1);
 }
 
 // input to link user to submitted data
 var userInput = document.getElementById("submitting-user");
 
+function isApproved() {
+  // does user have an OTI email address?
+  if (user.match(/@opentechinstitute.org/) != null) {
+    return true;
+  }
+}
+
 document.getElementById("to-form").addEventListener("click", function( event ) {
-  var isApproved = include(approved, user);
-  if (isApproved) {
+  if (isApproved()) {
     userInput.value = user;
     currentLoc = window.location;
     setTimeout(function () {
