@@ -72,3 +72,8 @@ table {
     }
   }
 }
+
+input[name="months"], input[name="year"] {
+  visibility: hidden;
+  width:0;
+}

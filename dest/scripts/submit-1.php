@@ -1,4 +1,6 @@
 <?php
+$_SESSION['months'] = $_POST['months'];
+$_SESSION['year'] = $_POST['year'];
 $_SESSION['usa_search_warrants_total'] = $_POST['search-warrants'];
 $_SESSION['usa_wiretap_orders_total'] = $_POST['wiretap-orders'];
 $_SESSION['usa_pen_registers_total'] = $_POST['pen-register-orders'];

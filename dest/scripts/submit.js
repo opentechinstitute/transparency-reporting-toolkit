@@ -123,6 +123,9 @@ switch (thisForm) {
 //     document.submitButton.submit();
 //   }, false);
 // }
+var chosenMonths;
+var chosenYears;
+
 if (formProcess() == 0) {
   var months = document.getElementsByClassName('months');
   months = months[0].getElementsByTagName('span');
@@ -130,6 +133,8 @@ if (formProcess() == 0) {
   var years = document.getElementsByClassName('years');
   years = years[0].getElementsByTagName('span');
   years = [].slice.call(years);
+  var copyMonth = document.getElementById('copyMonths');
+  var copyYear = document.getElementById('copyYears');
   addListeners(months);
   addListeners(years);
 }
@@ -145,7 +150,11 @@ function addListeners(period) {
           period[j].classList.remove('selected');
         }
       }
-      console.log(this);
+      if (this.parentNode.classList == "months") {
+        copyMonth.value = this.innerHTML;
+      } else {
+        copyYear.value = this.innerHTML;
+      }
     }, false);
   }
 }

@@ -94,7 +94,7 @@ document.getElementById("to-form").addEventListener("click", function( event ) {
       window.location = currentLoc.origin+"/submit-report-0.php";
     }, 1000);
   } else {
-    alert("Sorry, your account hasn't been approved for data upload. Please <a href='mailto:addme@opentechinstitute.org'>contact us</a> to be approved");
+    alert("Sorry, your account hasn't been approved for data upload. Please contact us to be approved");
     event.preventDefault();
   }
 }, false);
