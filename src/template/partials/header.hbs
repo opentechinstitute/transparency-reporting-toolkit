@@ -1,5 +1,8 @@
 <?php
   session_start();
+  {{#if auth}}
+    include 'scripts/auth.php';
+  {{/if}}
   {{#if first}}
     include 'scripts/submit-0.php';
   {{/if}}
@@ -10,7 +13,7 @@
     include 'scripts/submit-{{subtract index 1}}.php';
   {{/if}}
   {{#if explore}}
-    include 'scripts/explore-1.php';
+    include 'scripts/explore-request.php';
   {{/if}}
 ?>
 <html>

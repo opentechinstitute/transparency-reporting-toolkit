@@ -1,5 +1,6 @@
 <?php
   session_start();
+    include 'scripts/auth.php';
     include 'scripts/gatekeeper.php';
     include 'scripts/submit-14.php';
 ?>

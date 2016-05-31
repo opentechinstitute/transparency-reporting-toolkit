@@ -1,6 +1,7 @@
 <?php
   session_start();
-    include 'scripts/explore-1.php';
+    include 'scripts/auth.php';
+    include 'scripts/explore-request.php';
 ?>
 <html>
 <head>
