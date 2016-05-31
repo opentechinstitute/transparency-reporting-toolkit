@@ -1,5 +1,6 @@
 <?php
   session_start();
+    include 'scripts/explore-1.php';
 ?>
 <html>
 <head>
