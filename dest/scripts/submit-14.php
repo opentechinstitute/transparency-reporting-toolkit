@@ -28,7 +28,7 @@ $maxNo = count($titles);
 
 $newRecord = new stdClass();
 
-for ($i = 0; $i < $maxNo-1; $i++) {
+for ($i = 0; $i < $maxNo; $i++) {
   // set up fields
   // TODO: set these up separately once, instead of every time
   ${'field'.$i} = new stdClass();
