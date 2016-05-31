@@ -14,5 +14,4 @@ If you aren't sure whether you have any of the above, in Terminal run `[name of 
 ## Local development
 - `npm install` will get you the grunt tasks installed in a node_modules folder
 - `gem install sass` will install SASS
-- run `grunt` to start a php server (will open browser window pointed at localhost when ready)
-- in a separate Terminal window, run `grunt watch` to keep an eye on .hbs, .scss and .js files in your src folder 
+- run `grunt` to start a php server (will open browser window pointed at localhost when ready), the `watch` task will also run to update your .hbs, .scss and .js files
