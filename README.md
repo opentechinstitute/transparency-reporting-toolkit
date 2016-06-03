@@ -9,12 +9,12 @@ The TL;DR of the below details is this:
 - php scripts (those without html markup) can be updated directly in the dest/scripts folder
 
 ### Prerequisites
-- Node
-- NPM
-- Grunt & Grunt-cli
-- PHP
-- Git
-- Ruby
+- [Node](https://nodejs.org/en/)
+- [NPM](http://npmjs.com/)
+- [Grunt & Grunt-cli](http://gruntjs.com/)
+- [PHP](http://php.net/)
+- [Git](https://git-scm.com/)
+- [Ruby](https://www.ruby-lang.org/en/) - required for SCSS
 
 If you aren't sure whether you have any of the above, in Terminal run `[name of prerequisite] -v` to get the version number (if it's installed).
 
