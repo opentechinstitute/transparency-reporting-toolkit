@@ -51,3 +51,16 @@ If you want to add a conditional piece of content (e.g. USA-only), you'll need t
 - ensure the affected .hbs pages in src/content have "isUSA: true" in the section between the --- marks
 - if "isUSA:" is not present on a particular .hbs page, or is marked as false, then the conditional content will not be added to that page when compiled
 
+### Grunt tasks
+[Grunt](http://gruntjs.com/) runs in the background to do the following:
+- turn [SCSS](http://sass-lang.com/) to CSS ([tasks/option/sass.js](https://www.npmjs.com/package/grunt-contrib-sass))
+- concatenate Javascript files ([tasks/options/concat.js](https://www.npmjs.com/package/grunt-contrib-concat))
+- lint the compiled CSS files ([tasks/options/csslint.js](https://www.npmjs.com/package/grunt-contrib-csslint))
+- assemble the .hbs files into PHP ([tasks/options/assemble.js](https://www.npmjs.com/package/grunt-assemble))
+- run a PHP server at localhost:8000 ([tasks/options/php.js](https://www.npmjs.com/package/grunt-php))
+
+The [watch](https://www.npmjs.com/package/grunt-contrib-watch) task (defined in tasks/options/watch.js) keeps an eye on the .hbs, .scss and .js files in the src folder. When any of those files are saved after changes it prompts tasks 1-4 to run.
+
+There is also an [uglify](https://www.npmjs.com/package/grunt-contrib-uglify) task (defined in tasks/options/uglify.js) which will minify the Javascript files. This is currently not enabled as the site is still in development.
+
+All of the aforementioned tasks are defined separately, then pulled into the Gruntfile.js in root. The line `grunt.registerTask('default', ['php', 'watch']);` states that a PHP server should be started and then the watch task runs.
