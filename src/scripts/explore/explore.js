@@ -16,12 +16,15 @@ function testAjax() {
 }
 
 function populateCompanies() {
+  var el = document.getElementById('search-companies');
+
   data.limit = 5;
   var promise = testAjax();
   promise.success(function(data){
     var results = promise.responseJSON.result.records;
     for (var i=0; i<results.length; i++) {
-      console.log(results[i]["company_name"]);
+      company = results[i]["company_name"];
+      $(el).append('<option value="'+company+'">'+company+'</option>');
     }
   });
 }
