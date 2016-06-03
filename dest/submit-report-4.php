@@ -6,7 +6,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <title>Transparency Reporting Toolkit</title>
+  <title>Outcomes/compliance with requests | Transparency Reporting Toolkit</title>
   <link rel="stylesheet" href="./styles/main.css" />
   <script src='https://apis.google.com/js/platform.js' async defer></script>
   <meta name="google-signin-client_id" content="866567614664-plajrfu1bkmapbop03i30nh9vdmmdqe3.apps.googleusercontent.com">
